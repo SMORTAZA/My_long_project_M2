@@ -6,3 +6,5 @@ téléchargement des données de Martine Aggerbeck
 
 ##23/10/2017
 Les données à analyser se trouvent dans Raw Data_juillet 2017_HepaRG_phtalates et metals_UPD_E16_093-2bis. 
+pb = enlever le fichier word du dossier contenant les data. Mais erreur à résoudre
+
