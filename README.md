@@ -31,17 +31,17 @@ library(pd.hugene.2.0.st)
 #RMA sur cet array pour normalisation des données
 eset <- rma(affyRaw)
 #ecriture des resultats dans un fichier data
-write.exprs(eset,file="data.txt")
-#enregistrement des data dans un objet data
-data <- read.table('data.txt')
-#verification de l'objet data
-dim(data)
-#Visualisation de la table
-View(data)
+write.exprs(eset,file="./../results/data.txt")
 #Sortir des dossiers contenant les données (fichiers .CEL)
 setwd("./..")
 #Verifier ce changement de repertoire
 getwd()
+#enregistrement des data dans un objet data
+data <- read.table('./results/data.txt')
+#verification de l'objet data
+dim(data)
+#Visualisation de la table
+View(data)
 ```
 
 Modification des noms de colonnes
@@ -62,9 +62,11 @@ for (i in seq(length(colnames(data)))){
   }
 }
 colnames(data)
+save(data, file = "./results/data.RData")
 ```
 
 Modification des noms de lignes (remplacement par des noms de genes)
 
 ```{r}
+load('./results/data.RData')
 ```
