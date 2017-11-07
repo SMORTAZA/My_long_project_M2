@@ -36,3 +36,15 @@ https://bioconductor.org/packages/release/data/annotation/html/pd.hugene.2.0.st.
 - creation de nvx dossiers 
 - http://rug.mnhn.fr/semin-r/PDF/semin-R_data_JPedraza_100608.pdf
 pr enregistrement la dataframe intermédiaire
+
+##31/10/2017
+- page 6 de https://bioconductor.org/packages/release/data/annotation/manuals/hugene20sttranscriptcluster.db/man/hugene20sttranscriptcluster.db.pdf (site donné par Karine AUDOUZE pour l'annotation des gènes)
+- http://www.ensembl.org/info/data/biomart/biomart_r_package.html pr aller de id ensembl à noms de genes
+
+##02/11/2017
+- pb au niv annotation genes pr avoir identifiant EnsemblGeneID (pas pr certains ?)
+Error in if (which(a == line_num[i]) == integer(0)) { : 
+  l'argument est de longueur nulle
+
+##07/11/2017
+- pas de nom de genes pour la plupart des 'probes' -> ?

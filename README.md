@@ -9,6 +9,8 @@
 #biocLite("oligo")
 #source("https://bioconductor.org/biocLite.R")
 #biocLite("pd.hugene.2.0.st")
+#source("https://bioconductor.org/biocLite.R")
+#biocLite("hugene20sttranscriptcluster.db")
 ```
 
 Lecture des fichiers.CEL pour obtention d'un table data regroupant toutes les données
@@ -61,7 +63,9 @@ for (i in seq(length(colnames(data)))){
    ind = 0
   }
 }
+#Vérification du nom des colonnes
 colnames(data)
+#Enregistrement de la matrice de résultats avec les bons noms de colonnes dans un RData
 save(data, file = "./results/data.RData")
 ```
 
@@ -69,4 +73,40 @@ Modification des noms de lignes (remplacement par des noms de genes)
 
 ```{r}
 load('./results/data.RData')
+library(hugene20sttranscriptcluster.db)
+#hugene20sttranscriptcluster()
+#permet d'avoir un dataframe Annot contenant les annotations
+Annot <- data.frame(ACCNUM=sapply(contents(hugene20sttranscriptclusterACCNUM), paste, collapse=", "), SYMBOL=sapply(contents(hugene20sttranscriptclusterSYMBOL), paste, collapse=", "), DESC=sapply(contents(hugene20sttranscriptclusterGENENAME), paste, collapse=", "))
+#Enregistrement des résultats d'annotation dans un Rdata
+save(data, file = "./results/Annot.RData")
 ```
+
+```{r}
+#lignes de code à ne pas prendre en compte (brouillon)
+line_num <- rownames(data)
+data$Ensembl_gene_ID <- rep(NA)
+a <- names(xx)
+for (i in seq(length(line_num))){
+  if (which(a == line_num[i]) == integer(0)){
+    print('ok')
+  }
+  #data$Ensembl_gene_ID[i] <- xx[which(a == line_num[i])]
+  #print(line_num[i])
+}
+
+## Bimap interface:
+library(hugene20sttranscriptcluster.db)
+x <- hugene20sttranscriptclusterENSEMBL
+# Get the entrez gene IDs that are mapped to an Ensembl ID
+mapped_genes <- mappedkeys(x)
+# Convert to a list
+xx <- as.list(x[mapped_genes])
+if(length(xx) > 0) {
+# Get the Ensembl gene IDs for the first five genes
+xx[1:5]
+# Get the first one
+xx[[1]]
+}
+```
+
+
