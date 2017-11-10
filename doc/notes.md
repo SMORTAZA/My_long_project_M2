@@ -48,3 +48,6 @@ Error in if (which(a == line_num[i]) == integer(0)) { :
 
 ##07/11/2017
 - pas de nom de genes pour la plupart des 'probes' -> ?
+
+##10/11/2017
+- 

@@ -79,6 +79,12 @@ library(hugene20sttranscriptcluster.db)
 Annot <- data.frame(ACCNUM=sapply(contents(hugene20sttranscriptclusterACCNUM), paste, collapse=", "), SYMBOL=sapply(contents(hugene20sttranscriptclusterSYMBOL), paste, collapse=", "), DESC=sapply(contents(hugene20sttranscriptclusterGENENAME), paste, collapse=", "))
 #Enregistrement des résultats d'annotation dans un Rdata
 save(data, file = "./results/Annot.RData")
+save(data, file = "./results/data.RData")
+```
+
+```{r}
+load('./results/data.RData')
+
 ```
 
 ```{r}
