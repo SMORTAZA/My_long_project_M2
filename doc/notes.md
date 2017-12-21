@@ -93,3 +93,16 @@ xx[[1]]
 - envoi de mail pour analyse des SVD/PCA
 - note : choix de anova plutot que de ttest car plus puissant
 - essayer de comprendre comment marche Annova 2 ways.
+
+##04/12/2017
+- comprendre anova
+
+##05/12/2017
+- creer des design pour chaque condition ... ?
+- demande aide à un bioinformaticien de C3BI pour faire anova, m'a conseillé d'utiliser package limma, plus adapté à mes données
+
+##21/12/2017
+- http://silico.biotoul.fr/site/index.php/InfoBio_TD_transcriptome
+- http://bioinfo.unil.ch/tp/bachelor_3rd_year/tp1/
+- ce dernier site detaille bien les etapes a suivre. dc reussi à obtenir des pvalues pour les trois comparaisons. reste à faire sort() dessus, puis de faire volcanoplot.
+- commennt avoir le fold change pr faire le volcanoplot ?

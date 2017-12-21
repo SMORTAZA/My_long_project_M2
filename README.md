@@ -140,3 +140,15 @@ text(V[,2], V[,3], pnames, col = cat_col)
 The Two-Way ANOVA [entre conditions X et Y]
 
 The two-way ANOVA uses all the data in a single test. This enables us to not only find the genes that are expressed differently in X compared to Y, but also the genes that are expressed differently between the two cell types. On top of this we will also get a list of genes that exhibit an interaction effect between the two factors. 
+
+********
+
+Création de design pour chaque comparaison de conditions:
+1°) Contrôle vs HNO3
+2°) HNO3 vs M1
+3°) HNO3 vs M2
+
+```{}
+design1 <-  data.frame(condition=rep(c("c1","c2", "c3", "c4","c5"),5),type=rep(c("Baseline","Ctrl", "HNO3", "M1","M2"),5), row.names=colnames(data[,-c(26,27)]))
+
+```
