@@ -15,10 +15,22 @@ dim(data)
 w_data=data[,c(1,6,11,16,21,2,7,12,17,22,3,8,13,18,23,4,9,14,19,24,5,10,15,20,25)]
 #Enregistrement du nouveau tableau
 save(w_data, file = "./results/w_data.RData")
+#ouverture de ces données
+load('./results/data.RData')
+load('./results/w_data.RData')
 #creation du design
 design <- matrix(c(rep(c(1,0,0,0,0),5),rep(c(0,1,0,0,0),5),rep(c(0,0,1,0,0),5),rep(c(0,0,0,1,0),5),rep(c(0,0,0,0,1),5)), ncol=5,byrow=TRUE)
 colnames(design) <- c("Baseline","Ctrl","HNO3","M1","M2")
 rownames(design) <- colnames(w_data)
+design <- data.frame(design)
+
+########################################################
+#Pour avoir un seuil pour la significativité des pvalues
+########################################################
+#the t-test
+require(genefilter)
+
+
 
 #importation de la librairie limma
 library(limma)
@@ -29,4 +41,8 @@ fit <- lmFit(log2(w_data), design)
 #recherche de differences significatives
 eBayesResultat <- eBayes(contrasts.fit(fit, contrast.matrix))
 #head des pvalues
-head(eBayesResultat$p.value)
+CtrlvsHNO3 = eBayesResultat$p.value[,1]
+HNO3vsM1 = eBayesResultat$p.value[,2]
+HNO3vsM2 = eBayesResultat$p.value[,3]
+
+

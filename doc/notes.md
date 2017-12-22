@@ -106,3 +106,7 @@ xx[[1]]
 - http://bioinfo.unil.ch/tp/bachelor_3rd_year/tp1/
 - ce dernier site detaille bien les etapes a suivre. dc reussi à obtenir des pvalues pour les trois comparaisons. reste à faire sort() dessus, puis de faire volcanoplot.
 - commennt avoir le fold change pr faire le volcanoplot ?
+
+##22/12/2017
+- faire le volcanoplot pour avoir un seuil de significativité pour chaque chaque comparaison. pour cela, faut avoir des pvalues et des log2 fold change, real et permutate. utiliser donc le ttest.
+- ensuite, faire le Bayes de Limma pour avoir les genes significatifs.
