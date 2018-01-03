@@ -105,8 +105,11 @@ xx[[1]]
 - http://silico.biotoul.fr/site/index.php/InfoBio_TD_transcriptome
 - http://bioinfo.unil.ch/tp/bachelor_3rd_year/tp1/
 - ce dernier site detaille bien les etapes a suivre. dc reussi à obtenir des pvalues pour les trois comparaisons. reste à faire sort() dessus, puis de faire volcanoplot.
-- commennt avoir le fold change pr faire le volcanoplot ?
+- comment avoir le fold change pr faire le volcanoplot ?
 
 ##22/12/2017
 - faire le volcanoplot pour avoir un seuil de significativité pour chaque chaque comparaison. pour cela, faut avoir des pvalues et des log2 fold change, real et permutate. utiliser donc le ttest.
 - ensuite, faire le Bayes de Limma pour avoir les genes significatifs.
+
+##03/01/2017
+- redaction du rapport dans GoogleDocs(page de garde, titres, intro, debut de resultats avec la normalisation et les SVD)
