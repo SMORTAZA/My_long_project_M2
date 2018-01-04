@@ -111,8 +111,10 @@ xx[[1]]
 - faire le volcanoplot pour avoir un seuil de significativité pour chaque chaque comparaison. pour cela, faut avoir des pvalues et des log2 fold change, real et permutate. utiliser donc le ttest.
 - ensuite, faire le Bayes de Limma pour avoir les genes significatifs.
 
-##03/01/2017
+##03/01/2018
 - redaction du rapport dans GoogleDocs(page de garde, titres, intro, debut de resultats avec la normalisation et les SVD)
 - realisation ttest + fold change + volcanoplot
 - demande de confirmation à Madame AUDOUZE des seuils choisis pour les trois comparaisons avec les volcanoplots (envoi de mail)
 
+##04/01/2018
+- 

@@ -1,0 +1,1455 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/ga.js"></script><script language="JavaScript">
+var page='summary';
+</script>
+
+  
+  
+  
+
+  
+  
+
+
+
+
+
+
+
+<title>DAVID: Database for Annotation, Visualization, and Integrated 
+Discovery (Laboratory of Human Retrovirology and Immunoinformatics 
+(LHRI); National Institute of Allergies and Infectious Diseases (NIAID);
+ Leidos Biomedical Research, Inc. (LBR)</title>
+<link rel="stylesheet" type="text/css" href="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/template.css">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-74367-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body class="template" --="" !--style="color: #006699;" onload="addRowHandlers('row', 'rowMouseOver', 'chartReport.jsp', 'id', 0)">
+
+<table width="950" bgcolor="F9F9F9">
+   <tbody><tr class="header"><td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<link rel="shortcut icon" href="https://david.ncifcrf.gov/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/header.css">
+	<link rel="stylesheet" type="text/css" href="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/progressBar.css">
+	 <script type="text/javascript" src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/header_menu.js"></script>
+	<script type="text/javascript" src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/progressBar.js"></script>
+	<script language="JavaScript"> 
+	
+	
+	function GBClick(parent, child) { 
+	window.location = parent; 
+	window.open(child); 
+	
+	} 
+	
+</script> 
+
+
+	<title>DAVID Bioinformatics 6.7</title>
+
+	
+
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0" bgcolor="#366599">
+  <tbody><tr> 
+    						<td>
+							<table>
+								<tbody><tr>	
+									<td align="center"><a href="https://david.ncifcrf.gov/home.jsp"><img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/david_logo2.jpg" style="border: 0px solid ; " alt="The Database for Annotation, Visualization and Integrated Discovery" align="middle"></a>
+									</td>
+									<td>
+										<table>
+											<tbody><tr><td class="title1" align="center">DAVID Bioinformatics Resources 6.8</td>
+												
+											</tr>
+											<tr>
+												<td class="title2">National Institute of Allergy and Infectious Diseases (NIAID), NIH</td>
+
+											</tr>
+										</tbody></table>
+									</td>
+								</tr>
+							</tbody></table>
+						</td>
+  </tr>
+  <!--<tr><td><marquee><font color="white">Text to scroll</font></marquee></td></tr>-->
+  
+</tbody></table>
+<div id="progress" class="prog-border" style="visibility: hidden;">
+<div id="bar" class="prog-bar" style="width: 980px;">
+  <div id="barText" class="prog-text">100%</div>
+</div>
+</div>	
+<div align="center">
+<!-- <font color=red><b>*** DAVID will be down from 7am EST Saturday 8/20/2011 for a duration of ~8 hours due to maintenance in our data center.  This interval could potentially be shorter depending on the progress of the work.  We apologize for any inconvenience. ***</b></font> -->
+
+<!-- <font color=red><b>*** DAVID will be down from 5pm EST Friday 6/24/2011 to 3pm EST Sunday 6/26/2011 due to maintenance in our data center.  This interval could potentially be shorter depending on the progress of the work.  We apologize for any inconvenience. ***</b></font> -->
+
+<!-- <font color=red><b>*** We are currently accepting Beta users for our new DAVID Web Service which allows access to DAVID from various programming languages.  Please <a href="mailto:bsherman@mail.nih.gov?cc=jiaox3@mail.nih.gov&amp;subject=DAVID Web Service Beta Test"> contact us</a> for access. ***</b></font> -->
+<!-- <font color=red><b>*** The Gene Symbol mapping for list upload and conversion has changed.  Please see the <a href="forum/cgi-bin/ikonboard.cgi?act=ST;f=11;t=18;r=1">DAVID forum announcement</a> for details.</b></font>-->
+<!-- <font color=red><b>*** Announcing the new DAVID Web Service which allows access to DAVID from various programming languages. <a target="_blank" href="content.jsp?file=WS.html"> More info...</a> ***</b></font> -->
+
+<!--<font color=red><b>*** DAVID 6.8 will be down for maintenance on Thursday, 2/23/2016, from 9AM-1PM EST ***</b></font>-->
+<font color="red"><b><br>*** Welcome to DAVID 6.8 ***<br>***  If you are looking for <a target="_blank" href="https://david-d.ncifcrf.gov/">DAVID 6.7</a>, please visit our <a target="_blank" href="https://david-d.ncifcrf.gov/">development site</a>. ***</b></font>
+<!-- <font color=red><b><br>*** Welcome to DAVID 6.8 with updated Knowledgebase (<a target="_blank" href="content.jsp?file=release.html"> more info</a>). ***<br>***  If you are looking for <a target="_blank" href="https://david-d.ncifcrf.gov">DAVID 6.7</a>, please visit our <a target="_blank" href="https://david-d.ncifcrf.gov">development site</a>. ***</b></font>-->
+
+<!-- <font color=red><b><br>*** Welcome to DAVID 6.8 with updated Knowledgebase (<a target="_blank" href="content.jsp?file=release.html"> more info</a>). ***<br>***  The DAVID 6.7 server is currently down for maintenance. ***</b></font> -->
+<!--<br><br><font color=red><b>*** Please read: Due to data center maintenance, DAVID will be offline from Friday, June 17th @ 4pm EST through Sunday, June 19th with the possibility of being back online sooner. ***</b></font>-->
+
+
+</div>
+<script type="text/javascript">setProgress2(0);showProgress();</script>
+
+
+
+
+
+<!-- ae_prompt HTML code -->
+<div id="aep_ovrl" style="display: none;">&nbsp;</div>
+<div id="aep_ww" style="display: none;">
+<div id="aep_win">
+<div id="aep_t"></div>
+<div id="aep_w"><span id="aep_prompt"></span>
+<br><input id="aep_text" onkeypress="if((event.keyCode==10)||(event.keyCode==13)) ae_clk(1); if (event.keyCode==27) ae_clk(0);" type="text"><br>
+<div><input id="aep_ok" onclick="ae_clk(1);" value="OK" type="button">
+<input id="aep_cancel" onclick="ae_clk(0);" value="Cancel" type="button">
+</div></div>
+</div>
+</div>
+<!-- ae_prompt HTML code -->
+
+
+
+
+
+
+
+
+</td></tr>
+    <tr> <td> <table width="950" align="center">
+          <tbody><tr><td>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">setProgress(20);setLabel('20%');</script>
+
+
+<link rel="stylesheet" type="text/css" href="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/classification.css">
+<link rel="stylesheet" type="text/css" href="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/displaytagex.css">
+<script src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/RowHandlers.js" language="javascript" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/header.css">
+	<link rel="stylesheet" type="text/css" href="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/progressBar.css">
+	 <script type="text/javascript" src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/header_menu.js"></script>
+	<script type="text/javascript" src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/progressBar.js"></script>
+
+
+<title>DAVID Functional Annotation Chart</title>
+<link href="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/annotation_report.css" rel="stylesheet" type="text/css">
+<link href="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/summary.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/summary.js"></script>
+
+
+
+
+<script type="text/javascript">setProgress2(0);showProgress();</script>
+
+ <table width="100%">
+    <tbody><tr class="page_title"> 
+      <td>Functional Annotation Chart</td>
+</tr>
+    <tr> 
+      <td align="right"><a href="https://david.ncifcrf.gov/helps/functional_annotation.html#E3" target="_blank"><small>Help and Manual</small></a></td>
+</tr>
+<tr class="summary_header">
+		<td>Current Gene List: new_converted_list_M1</td>
+	</tr>
+	<tr class="summary_header">
+		<td>Current Background: Homo sapiens</td>
+		
+	</tr>
+    
+
+
+<tr class="summary_header">
+<script type="text/javascript">setProgress(30);setLabel('30%');</script><script type="text/javascript">setProgress(40);setLabel('40%');</script>
+<td>286 DAVID IDs</td>
+</tr></tbody></table>
+
+<form name="chartReport" id="chartReport" method="post" action="chartReport.jsp">
+<input name="annot" value="30" type="hidden">
+<input name="rowids" id="rowids" value="" type="hidden">
+<input name="heading" id="heading" type="hidden">
+<input name="visited" id="visited" value="yes" type="hidden">
+
+
+<ul id="summaryTree">
+    <li class="closed"><a href="#" class="parent" onclick="return door(this);">Options</a> 
+	 
+      <ul class="item"><li>
+    <table> 
+           </table><table> 
+	              <tbody><tr> 
+	   		   	  
+	                 <td class="options">Thresholds:
+	                 	&nbsp;&nbsp;&nbsp;&nbsp;Count&nbsp;<input class="options" name="count" value="2" type="text">
+	   		&nbsp;&nbsp;&nbsp;&nbsp;EASE&nbsp;<input class="options" name="ease" value="0.1" type="text">
+	   		</td>
+	   	  
+	               </tr><tr> 
+	   	    		   	  
+	   	                  <td class="options">Display:
+	   	                  &nbsp;&nbsp;<input class="sublistCB" name="cbFC" id="cbFC" value="true" type="checkbox">Fold Enrichment
+	   	                  &nbsp;&nbsp;<input class="sublistCB" name="cbBonferroni" id="cbBonferroni" value="true" type="checkbox">Bonferroni
+	   	                  &nbsp;&nbsp;<input class="sublistCB" name="cbBenjamini" id="cbBenjamini" value="true" checked="checked" type="checkbox">Benjamini
+	   	                   &nbsp;&nbsp;<input class="sublistCB" name="cbFDR" id="cbFDR" value="true" type="checkbox">FDR
+	   	                   &nbsp;&nbsp;<input class="sublistCB" name="cbFisher" id="cbFisher" value="true" type="checkbox">Fisher Exact
+	   	                   &nbsp;&nbsp;<input class="sublistCB" name="cbAllCounts" id="cbAllCounts" value="true" type="checkbox">LT,PH,PT
+	   	                  &nbsp;&nbsp;# of Records&nbsp;<input class="options" name="numRecords" value="1000" type="text">
+	   	                  </td>
+	   	    		  </tr>
+	               
+	</tbody></table>
+	</li></ul></li></ul></form></td></tr></tbody></table>
+
+<table width="100%">
+  <tbody><tr class="summary_header"><td width="50%"><input name="Submit" value="Rerun Using Options" class="optionsB" onclick="submitForm('chartReport.jsp','_self',document.getElementById('chartReport'));" type="button">
+  <input name="sublistButton" class="sublist" value="Create Sublist" onclick="createSublist();" type="button">
+  
+  </td></tr>
+  
+  
+
+</tbody></table><table width="100%"><tbody><tr class="summary_header"><td>57 chart records</td>
+
+
+<td align="right"><font size="-1">
+<a href="https://david.ncifcrf.gov/data/download/chart_5C195DF4634D1515076945241.txt" target="_blank">
+<img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/download.gif" alt="Right-click and select 'Save Target As' to download results">&nbsp;Download File</a></font>
+
+</td></tr></tbody></table><script type="text/javascript">setProgress(60);setLabel('60%');</script>
+
+  		
+<table id="row" class="dataTable" cellspacing="0">
+<thead>
+<tr>
+<th>Sublist</th>
+<th class="sortable">
+<a href="https://david.ncifcrf.gov/chartReport.jsp?d-16544-s=1&amp;d-16544-o=2&amp;annot=30&amp;d-16544-p=1">Category</a></th>
+<th class="sortable">
+<a href="https://david.ncifcrf.gov/chartReport.jsp?d-16544-s=2&amp;d-16544-o=2&amp;annot=30&amp;d-16544-p=1">Term</a></th>
+<th>RT</th>
+<th>Genes</th>
+<th class="sortable sorted order2">
+<a href="https://david.ncifcrf.gov/chartReport.jsp?d-16544-s=5&amp;d-16544-o=2&amp;annot=30&amp;d-16544-p=1">Count</a></th>
+<th class="sortable">
+<a href="https://david.ncifcrf.gov/chartReport.jsp?d-16544-s=6&amp;d-16544-o=1&amp;annot=30&amp;d-16544-p=1">%</a></th>
+<th class="sortable">
+<a href="https://david.ncifcrf.gov/chartReport.jsp?d-16544-s=7&amp;d-16544-o=1&amp;annot=30&amp;d-16544-p=1">P-Value</a></th>
+<th class="sortable">
+<a href="https://david.ncifcrf.gov/chartReport.jsp?d-16544-s=8&amp;d-16544-o=1&amp;annot=30&amp;d-16544-p=1">Benjamini</a></th></tr></thead>
+<tbody>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="5067,1805,57007,3679,1006,4059,56132,1824,4958,7057,4739,10085" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0007155" target="_blank">cell adhesion</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300002084" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0007155~cell adhesion');geneReport('5067,1805,57007,3679,1006,4059,56132,1824,4958,7057,4739,10085');" color="#000080" width="12.223776223776223" height="12" align="left">
+			</td>
+<td>12</td>
+<td>4,2</td>
+<td>2,1E-2</td>
+<td>8,9E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="84890,4051,3081,8564,8424,4835,2330,6716,1572,112399,10840,9645" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0055114" target="_blank">oxidation-reduction process</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300011127" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0055114~oxidation-reduction process');geneReport('84890,4051,3081,8564,8424,4835,2330,6716,1572,112399,10840,9645');" color="#000080" width="12.223776223776223" height="12" align="left">
+			</td>
+<td>12</td>
+<td>4,2</td>
+<td>9,5E-2</td>
+<td>9,5E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="84807,11343,6366,2149,1401,2053,5423,10563,558,1893,7057" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0006954" target="_blank">inflammatory response</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300001950" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0006954~inflammatory response');geneReport('84807,11343,6366,2149,1401,2053,5423,10563,558,1893,7057');" color="#000080" width="11.53846153846154" height="12" align="left">
+			</td>
+<td>11</td>
+<td>3,8</td>
+<td>1,5E-2</td>
+<td>8,4E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="344387,10110,5599,51265,9064,9201,2534,83931,7042,27330,130399" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0006468" target="_blank">protein phosphorylation</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300001574" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0006468~protein phosphorylation');geneReport('344387,10110,5599,51265,9064,9201,2534,83931,7042,27330,130399');" color="#000080" width="11.53846153846154" height="12" align="left">
+			</td>
+<td>11</td>
+<td>3,8</td>
+<td>4,5E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="50515,7052,2066,580,5599,83931,7057,51316,284,2737" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0043066" target="_blank">negative regulation of apoptotic process</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300008257" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0043066~negative regulation of apoptotic process');geneReport('50515,7052,2066,580,5599,83931,7057,51316,284,2737');" color="#000080" width="10.853146853146853" height="12" align="left">
+			</td>
+<td>10</td>
+<td>3,5</td>
+<td>9,1E-2</td>
+<td>9,5E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="6366,2149,2066,57007,54209,4835,2263,284" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0070374" target="_blank">positive regulation of ERK1 and ERK2 cascade</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300012334" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0070374~positive regulation of ERK1 and ERK2 cascade');geneReport('6366,2149,2066,57007,54209,4835,2263,284');" color="#000080" width="9.482517482517483" height="12" align="left">
+			</td>
+<td>8</td>
+<td>2,8</td>
+<td>4,9E-3</td>
+<td>7,3E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="2066,23767,5465,57545,7042,9645,80114,2737" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0007507" target="_blank">heart development</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300002358" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0007507~heart development');geneReport('2066,23767,5465,57545,7042,9645,80114,2737');" color="#000080" width="9.482517482517483" height="12" align="left">
+			</td>
+<td>8</td>
+<td>2,8</td>
+<td>6,2E-3</td>
+<td>6,9E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="6568,10227,57864,55244,55356,345274,84102,23460" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0055085" target="_blank">transmembrane transport</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300011111" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0055085~transmembrane transport');geneReport('6568,10227,57864,55244,55356,345274,84102,23460');" color="#000080" width="9.482517482517483" height="12" align="left">
+			</td>
+<td>8</td>
+<td>2,8</td>
+<td>2,7E-2</td>
+<td>9,2E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="2674,152559,151742,2066,857,2534,2263,284" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0000165" target="_blank">MAPK cascade</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300000059" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0000165~MAPK cascade');geneReport('2674,152559,151742,2066,857,2534,2263,284');" color="#000080" width="9.482517482517483" height="12" align="left">
+			</td>
+<td>8</td>
+<td>2,8</td>
+<td>3,7E-2</td>
+<td>9,2E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="4313,57007,857,2263,7042,1893,284" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0001525" target="_blank">angiogenesis</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300000319" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0001525~angiogenesis');geneReport('4313,57007,857,2263,7042,1893,284');" color="#000080" width="8.797202797202797" height="12" align="left">
+			</td>
+<td>7</td>
+<td>2,4</td>
+<td>5,0E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="2149,2066,1634,2534,7042,284" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0014068" target="_blank">positive regulation of phosphatidylinositol 3-kinase signaling</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300003780" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0014068~positive regulation of phosphatidylinositol 3-kinase signaling');geneReport('2149,2066,1634,2534,7042,284');" color="#000080" width="8.111888111888112" height="12" align="left">
+			</td>
+<td>6</td>
+<td>2,1</td>
+<td>1,0E-3</td>
+<td>7,5E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="1608,2149,558,2534,7222,54331" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0030168" target="_blank">platelet activation</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300005182" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0030168~platelet activation');geneReport('1608,2149,558,2534,7222,54331');" color="#000080" width="8.111888111888112" height="12" align="left">
+			</td>
+<td>6</td>
+<td>2,1</td>
+<td>1,2E-2</td>
+<td>8,3E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="4313,5465,857,112399,7042,7057" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0001666" target="_blank">response to hypoxia</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300000360" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0001666~response to hypoxia');geneReport('4313,5465,857,112399,7042,7057');" color="#000080" width="8.111888111888112" height="12" align="left">
+			</td>
+<td>6</td>
+<td>2,1</td>
+<td>5,4E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="50515,3239,10110,10563,2534,112399" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0042127" target="_blank">regulation of cell proliferation</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300007803" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0042127~regulation of cell proliferation');geneReport('50515,3239,10110,10563,2534,112399');" color="#000080" width="8.111888111888112" height="12" align="left">
+			</td>
+<td>6</td>
+<td>2,1</td>
+<td>7,0E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="152559,91663,9353,135228,284" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0001933" target="_blank">negative regulation of protein phosphorylation</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300000504" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0001933~negative regulation of protein phosphorylation');geneReport('152559,91663,9353,135228,284');" color="#000080" width="7.426573426573427" height="12" align="left">
+			</td>
+<td>5</td>
+<td>1,7</td>
+<td>5,9E-3</td>
+<td>7,3E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="6694,5099,7042,1893,7057" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0002576" target="_blank">platelet degranulation</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300000828" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0002576~platelet degranulation');geneReport('6694,5099,7042,1893,7057');" color="#000080" width="7.426573426573427" height="12" align="left">
+			</td>
+<td>5</td>
+<td>1,7</td>
+<td>3,4E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="59352,857,340419,2263,8313" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0090263" target="_blank">positive regulation of canonical Wnt signaling pathway</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300013762" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0090263~positive regulation of canonical Wnt signaling pathway');geneReport('59352,857,340419,2263,8313');" color="#000080" width="7.426573426573427" height="12" align="left">
+			</td>
+<td>5</td>
+<td>1,7</td>
+<td>5,5E-2</td>
+<td>9,3E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="2149,558,2534,128434,284" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0043524" target="_blank">negative regulation of neuron apoptotic process</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300008460" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0043524~negative regulation of neuron apoptotic process');geneReport('2149,558,2534,128434,284');" color="#000080" width="7.426573426573427" height="12" align="left">
+			</td>
+<td>5</td>
+<td>1,7</td>
+<td>7,2E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="1634,9353,7057,6781" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0010596" target="_blank">negative regulation of endothelial cell migration</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300003433" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0010596~negative regulation of endothelial cell migration');geneReport('1634,9353,7057,6781');" color="#000080" width="6.741258741258742" height="12" align="left">
+			</td>
+<td>4</td>
+<td>1,4</td>
+<td>1,2E-3</td>
+<td>5,4E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="84649,8694,857,130399" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0019915" target="_blank">lipid storage</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300004782" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0019915~lipid storage');geneReport('84649,8694,857,130399');" color="#000080" width="6.741258741258742" height="12" align="left">
+			</td>
+<td>4</td>
+<td>1,4</td>
+<td>2,8E-3</td>
+<td>7,1E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="6716,2263,5734,6781" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0060348" target="_blank">bone development</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300011389" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0060348~bone development');geneReport('6716,2263,5734,6781');" color="#000080" width="6.741258741258742" height="12" align="left">
+			</td>
+<td>4</td>
+<td>1,4</td>
+<td>1,3E-2</td>
+<td>8,3E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="306,147372,7057,284" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0010595" target="_blank">positive regulation of endothelial cell migration</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300003432" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0010595~positive regulation of endothelial cell migration');geneReport('306,147372,7057,284');" color="#000080" width="6.741258741258742" height="12" align="left">
+			</td>
+<td>4</td>
+<td>1,4</td>
+<td>1,7E-2</td>
+<td>8,5E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="90338,7042,860,284" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0030097" target="_blank">hemopoiesis</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300005162" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0030097~hemopoiesis');geneReport('90338,7042,860,284');" color="#000080" width="6.741258741258742" height="12" align="left">
+			</td>
+<td>4</td>
+<td>1,4</td>
+<td>3,3E-2</td>
+<td>9,5E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="2792,23426,857,57863" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0008104" target="_blank">protein localization</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300002482" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0008104~protein localization');geneReport('2792,23426,857,57863');" color="#000080" width="6.741258741258742" height="12" align="left">
+			</td>
+<td>4</td>
+<td>1,4</td>
+<td>3,6E-2</td>
+<td>9,2E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="6366,57007,10563,2826" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0070098" target="_blank">chemokine-mediated signaling pathway</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300012194" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0070098~chemokine-mediated signaling pathway');geneReport('6366,57007,10563,2826');" color="#000080" width="6.741258741258742" height="12" align="left">
+			</td>
+<td>4</td>
+<td>1,4</td>
+<td>5,2E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="5465,1634,7042,2737" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0042060" target="_blank">wound healing</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300007767" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0042060~wound healing');geneReport('5465,1634,7042,2737');" color="#000080" width="6.741258741258742" height="12" align="left">
+			</td>
+<td>4</td>
+<td>1,4</td>
+<td>6,9E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="6366,558,7057,284" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0051897" target="_blank">positive regulation of protein kinase B signaling</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300010934" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0051897~positive regulation of protein kinase B signaling');geneReport('6366,558,7057,284');" color="#000080" width="6.741258741258742" height="12" align="left">
+			</td>
+<td>4</td>
+<td>1,4</td>
+<td>7,8E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="3852,51806,6706,5465" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0008544" target="_blank">epidermis development</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300002550" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0008544~epidermis development');geneReport('3852,51806,6706,5465');" color="#000080" width="6.741258741258742" height="12" align="left">
+			</td>
+<td>4</td>
+<td>1,4</td>
+<td>8,0E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="2053,79054,857,6781" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0006874" target="_blank">cellular calcium ion homeostasis</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300001893" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0006874~cellular calcium ion homeostasis');geneReport('2053,79054,857,6781');" color="#000080" width="6.741258741258742" height="12" align="left">
+			</td>
+<td>4</td>
+<td>1,4</td>
+<td>9,8E-2</td>
+<td>9,5E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="11343,84649,8694" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0036155" target="_blank">acylglycerol acyl-chain remodeling</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300007402" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0036155~acylglycerol acyl-chain remodeling');geneReport('11343,84649,8694');" color="#000080" width="6.055944055944056" height="12" align="left">
+			</td>
+<td>3</td>
+<td>1,0</td>
+<td>2,8E-3</td>
+<td>6,1E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="374462,23426,65989" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0045598" target="_blank">regulation of fat cell differentiation</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300009055" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0045598~regulation of fat cell differentiation');geneReport('374462,23426,65989');" color="#000080" width="6.055944055944056" height="12" align="left">
+			</td>
+<td>3</td>
+<td>1,0</td>
+<td>1,0E-2</td>
+<td>8,1E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="147372,7057,284" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0002040" target="_blank">sprouting angiogenesis</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300000581" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0002040~sprouting angiogenesis');geneReport('147372,7057,284');" color="#000080" width="6.055944055944056" height="12" align="left">
+			</td>
+<td>3</td>
+<td>1,0</td>
+<td>3,5E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="50515,1634,23169" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0030206" target="_blank">chondroitin sulfate biosynthetic process</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300005202" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0030206~chondroitin sulfate biosynthetic process');geneReport('50515,1634,23169');" color="#000080" width="6.055944055944056" height="12" align="left">
+			</td>
+<td>3</td>
+<td>1,0</td>
+<td>3,5E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="2263,8313,7042" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0042476" target="_blank">odontogenesis</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300007978" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0042476~odontogenesis');geneReport('2263,8313,7042');" color="#000080" width="6.055944055944056" height="12" align="left">
+			</td>
+<td>3</td>
+<td>1,0</td>
+<td>4,0E-2</td>
+<td>9,3E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="6913,2263,860" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0048701" target="_blank">embryonic cranial skeleton morphogenesis</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300010134" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0048701~embryonic cranial skeleton morphogenesis');geneReport('6913,2263,860');" color="#000080" width="6.055944055944056" height="12" align="left">
+			</td>
+<td>3</td>
+<td>1,0</td>
+<td>5,2E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="7052,558,7042" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0001974" target="_blank">blood vessel remodeling</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300000535" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0001974~blood vessel remodeling');geneReport('7052,558,7042');" color="#000080" width="6.055944055944056" height="12" align="left">
+			</td>
+<td>3</td>
+<td>1,0</td>
+<td>5,5E-2</td>
+<td>9,2E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="857,10590,5158" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0051480" target="_blank">regulation of cytosolic calcium ion concentration</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300010755" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0051480~regulation of cytosolic calcium ion concentration');geneReport('857,10590,5158');" color="#000080" width="6.055944055944056" height="12" align="left">
+			</td>
+<td>3</td>
+<td>1,0</td>
+<td>5,5E-2</td>
+<td>9,2E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="2263,83931,64759" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0048286" target="_blank">lung alveolus development</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300009895" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0048286~lung alveolus development');geneReport('2263,83931,64759');" color="#000080" width="6.055944055944056" height="12" align="left">
+			</td>
+<td>3</td>
+<td>1,0</td>
+<td>6,1E-2</td>
+<td>9,3E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="340419,2263,8313" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0030282" target="_blank">bone mineralization</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300005244" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0030282~bone mineralization');geneReport('340419,2263,8313');" color="#000080" width="6.055944055944056" height="12" align="left">
+			</td>
+<td>3</td>
+<td>1,0</td>
+<td>6,1E-2</td>
+<td>9,3E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="6366,558,860" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0048469" target="_blank">cell maturation</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300009972" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0048469~cell maturation');geneReport('6366,558,860');" color="#000080" width="6.055944055944056" height="12" align="left">
+			</td>
+<td>3</td>
+<td>1,0</td>
+<td>6,8E-2</td>
+<td>9,5E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="1006,79054,51316" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0009409" target="_blank">response to cold</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300002756" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0009409~response to cold');geneReport('1006,79054,51316');" color="#000080" width="6.055944055944056" height="12" align="left">
+			</td>
+<td>3</td>
+<td>1,0</td>
+<td>6,8E-2</td>
+<td>9,5E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="59352,340419,2263" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0030177" target="_blank">positive regulation of Wnt signaling pathway</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300005184" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0030177~positive regulation of Wnt signaling pathway');geneReport('59352,340419,2263');" color="#000080" width="6.055944055944056" height="12" align="left">
+			</td>
+<td>3</td>
+<td>1,0</td>
+<td>6,8E-2</td>
+<td>9,5E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="857,7042,7057" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0032570" target="_blank">response to progesterone</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300006018" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0032570~response to progesterone');geneReport('857,7042,7057');" color="#000080" width="6.055944055944056" height="12" align="left">
+			</td>
+<td>3</td>
+<td>1,0</td>
+<td>7,8E-2</td>
+<td>9,5E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="23767,1634,857" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0046426" target="_blank">negative regulation of JAK-STAT cascade</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300009497" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0046426~negative regulation of JAK-STAT cascade');geneReport('23767,1634,857');" color="#000080" width="6.055944055944056" height="12" align="left">
+			</td>
+<td>3</td>
+<td>1,0</td>
+<td>8,1E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="6690,7057" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0010751" target="_blank">negative regulation of nitric oxide mediated signal transduction</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300003542" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0010751~negative regulation of nitric oxide mediated signal transduction');geneReport('6690,7057');" color="#000080" width="5.370629370629371" height="12" align="left">
+			</td>
+<td>2</td>
+<td>0,7</td>
+<td>3,5E-2</td>
+<td>9,3E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="1627,857" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0032507" target="_blank">maintenance of protein location in cell</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300005996" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0032507~maintenance of protein location in cell');geneReport('1627,857');" color="#000080" width="5.370629370629371" height="12" align="left">
+			</td>
+<td>2</td>
+<td>0,7</td>
+<td>4,7E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="81501,135228" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0072675" target="_blank">osteoclast fusion</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300013354" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0072675~osteoclast fusion');geneReport('81501,135228');" color="#000080" width="5.370629370629371" height="12" align="left">
+			</td>
+<td>2</td>
+<td>0,7</td>
+<td>4,7E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="84649,8694" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0035336" target="_blank">long-chain fatty-acyl-CoA metabolic process</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300007010" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0035336~long-chain fatty-acyl-CoA metabolic process');geneReport('84649,8694');" color="#000080" width="5.370629370629371" height="12" align="left">
+			</td>
+<td>2</td>
+<td>0,7</td>
+<td>5,8E-2</td>
+<td>9,3E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="23209,857" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0072584" target="_blank">caveolin-mediated endocytosis</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300013321" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0072584~caveolin-mediated endocytosis');geneReport('23209,857');" color="#000080" width="5.370629370629371" height="12" align="left">
+			</td>
+<td>2</td>
+<td>0,7</td>
+<td>5,8E-2</td>
+<td>9,3E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="3239,2263" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0060527" target="_blank">prostate epithelial cord arborization involved in prostate glandular acinus morphogenesis</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300011523" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0060527~prostate epithelial cord arborization involved in prostate glandular acinus morphogenesis');geneReport('3239,2263');" color="#000080" width="5.370629370629371" height="12" align="left">
+			</td>
+<td>2</td>
+<td>0,7</td>
+<td>6,9E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="4313,8313" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0001957" target="_blank">intramembranous ossification</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300000523" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0001957~intramembranous ossification');geneReport('4313,8313');" color="#000080" width="5.370629370629371" height="12" align="left">
+			</td>
+<td>2</td>
+<td>0,7</td>
+<td>6,9E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="8820,2263" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0030916" target="_blank">otic vesicle formation</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300005436" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0030916~otic vesicle formation');geneReport('8820,2263');" color="#000080" width="5.370629370629371" height="12" align="left">
+			</td>
+<td>2</td>
+<td>0,7</td>
+<td>8,0E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="5423,7042" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0007435" target="_blank">salivary gland morphogenesis</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300002302" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0007435~salivary gland morphogenesis');geneReport('5423,7042');" color="#000080" width="5.370629370629371" height="12" align="left">
+			</td>
+<td>2</td>
+<td>0,7</td>
+<td>8,0E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="84649,5465" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0045722" target="_blank">positive regulation of gluconeogenesis</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300009136" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0045722~positive regulation of gluconeogenesis');geneReport('84649,5465');" color="#000080" width="5.370629370629371" height="12" align="left">
+			</td>
+<td>2</td>
+<td>0,7</td>
+<td>8,0E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="3239,2263" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0060687" target="_blank">regulation of branching involved in prostate gland morphogenesis</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300011625" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0060687~regulation of branching involved in prostate gland morphogenesis');geneReport('3239,2263');" color="#000080" width="5.370629370629371" height="12" align="left">
+			</td>
+<td>2</td>
+<td>0,7</td>
+<td>8,0E-2</td>
+<td>9,4E-1</td></tr>
+<tr class="even">
+<td>
+				<input class="sublistCB" name="CKDL" value="2263,860" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0040036" target="_blank">regulation of fibroblast growth factor receptor signaling pathway</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300007743" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0040036~regulation of fibroblast growth factor receptor signaling pathway');geneReport('2263,860');" color="#000080" width="5.370629370629371" height="12" align="left">
+			</td>
+<td>2</td>
+<td>0,7</td>
+<td>9,1E-2</td>
+<td>9,5E-1</td></tr>
+<tr class="odd">
+<td>
+				<input class="sublistCB" name="CKDL" value="84649,2053" type="checkbox">
+			</td>
+<td>GOTERM_BP_DIRECT</td>
+<td>
+				<a href="http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0090181" target="_blank">regulation of cholesterol metabolic process</a>
+
+				
+			</td>
+<td>
+						<a href="https://david.ncifcrf.gov/relatedTerms.jsp?id=300013701" target="_blank"><b>RT</b></a>
+			</td>
+<td> 
+						 <img src="DAVID:%20Database%20for%20Annotation,%20Visualization,%20and%20Integrated%20Discovery%20(Laboratory%20of%20Human%20Retrovirology%20and%20Immunoinformatics%20(LHRI);%20National%20Institute%20of%20Allergies%20and%20Infectious%20Diseases%20(NIAID);%20Leidos%20Biomedical%20Research,%20Inc.%20(LBR)_fichiers/two_tone_2_a.jpg" style="cursor:pointer" id="BARS" name="BARS" onclick="setHeading('GOTERM_BP_DIRECT:GO:0090181~regulation of cholesterol metabolic process');geneReport('84649,2053');" color="#000080" width="5.370629370629371" height="12" align="left">
+			</td>
+<td>2</td>
+<td>0,7</td>
+<td>9,1E-2</td>
+<td>9,5E-1</td></tr>
+<tr class="total"><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+		
+		
+		
+		
+		
+
+<script type="text/javascript">setProgress(80);setLabel('80%');</script><br><input class="removed" name="removedGenes" value="173 gene(s)" onclick="setHeading('Genes Not In Output');geneReport('2202,549,100616438,50652,60680,1089,100422955,101928405,53904,81794,84539,100422969,7673,130589,5470,158326,102723716,56944,284992,100500919,6001,4354,10468,100131755,3786,59271,101929539,10383,54941,100507203,100302275,101927379,101927881,102724749,8705,51557,27165,389337,55917,102723795,441027,1556,79191,10882,100506688,51076,101927171,54851,100506804,100505841,374819,91689,344657,407031,222235,729178,101927210,389136,137994,10343,90134,574460,115560,101927235,406943,101927244,390201,406939,79827,677806,677794,10293,169611,2646,5118,113189,27284,340990,132789,9947,150244,374864,9075,6334,4071,100874343,339965,51222,100113391,101928152,100507419,8565,102724530,440742,85371,101928176,10730,403323,117248,80069,2947,730092,58531,347918,83445,101927084,782,100996266,4062,100505890,57474,7827,114907,344454,57107,102724550,10642,60489,26061,574481,9537,148418,100422737,374,51313,4168,83858,64850,3507,143888,728606,100996671,55124,101928565,5837,50807,23180,102724965,200845,94122,54075,11077,2014,442184,56241,646938,101928509,23743,23255,7703,101928496,100288413,641654,133491,101929450,85376,441204,101927942,3855,7743,100616463,619190,131540,85438,101929425,4316,55076,7171,101927023,5274,101927973,100616464,116988');" type="button"> from your list are not in the output.
+
+
+
+
+<script type="text/javascript">setProgress(100);hideProgress();</script>
+
+
+
+</td></tr>
+           <tr><td></td></tr>
+          </tbody></table>
+     
+     
+
+
+
+
+
+
+
+</body></html>
+<!--<SCRIPT LANGUAGE="JavaScript">-->
+<!--hideProgress();</SCRIPT>-->
