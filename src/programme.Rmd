@@ -1,0 +1,170 @@
+---
+title: "Projet Long"
+author: "Shogofa MORTAZA"
+date: "5 janvier 2018"
+output: pdf_document
+---
+
+## Importation des données
+## Visualisation des données
+
+```{r}
+```
+
+## Tests statistiques
+
+- Importation des données
+
+```{r}
+load('../results/data.RData')
+dim(data)
+#rearrangement des col utiles de data
+w_data=data[,c(1,6,11,16,21,2,7,12,17,22,3,8,13,18,23,4,9,14,19,24,5,10,15,20,25)]
+#Enregistrement du nouveau tableau
+save(w_data, file = "../results/w_data.RData")
+#ouverture de ces données
+load('../results/w_data.RData')
+```
+
+- Design
+
+```{r}
+design <- matrix(c(rep(c(1,0,0,0,0),5),rep(c(0,1,0,0,0),5),
+                   rep(c(0,0,1,0,0),5),rep(c(0,0,0,1,0),5),
+                   rep(c(0,0,0,0,1),5)), ncol=5,byrow=TRUE)
+colnames(design) <- c("Baseline","Ctrl","HNO3","M1","M2")
+rownames(design) <- colnames(w_data)
+design <- data.frame(design)
+```
+
+- Design permuté
+
+```{r}
+#avoir le nb de lignes et de colonnes de la matrice design
+dim(design)
+#creation de la matrice permutated de la meme dimension que la matrice design
+#permutated_design = matrix(nrow = 25, ncol = 5)
+#for (i in seq(dim(design)[2])){
+#  print(i)
+#  print(design[,i])
+#  random_lables <- sample(design[,i])
+#  print(random_lables)
+#  permutated_design[,i] <- random_lables
+#}
+#colnames(permutated_design) <- c("Baseline","Ctrl","HNO3","M1","M2")
+#rownames(permutated_design) <- colnames(w_data)
+#permutated_design <- data.frame(permutated_design)
+#enregistrement des données car comme sample, alors change tt le tps
+#save(permutated_design, file = "./results/permutated_design.RData")
+#chargement des données
+load('../results/permutated_design.RData')
+```
+
+- Anova des données réelles
+
+```{r}
+#importation de la librairie limma
+library(limma)
+#conditions à comparer
+contrast.matrix <- makeContrasts(Ctrl-HNO3, HNO3-M1, HNO3-M2, M1-M2,
+                                 Baseline-Ctrl, levels=design)
+#paramètres du modèle ajustés en fct de nos données
+fit <- lmFit(log2(w_data), design)
+#recherche de differences significatives
+eBayesResultat <- eBayes(contrasts.fit(fit, contrast.matrix))
+```
+
+- Anova des données simulées
+
+```{r}
+#conditions à comparer
+contrast.matrix1 <- makeContrasts(Ctrl-HNO3, HNO3-M1, HNO3-M2, M1-M2,
+                                  Baseline-Ctrl, levels=permutated_design)
+#paramètres du modèle ajustés en fct de nos données
+perm_fit <- lmFit(log2(w_data), permutated_design)
+#recherche de differences significatives
+perm_eBayesResultat <- eBayes(contrasts.fit(perm_fit, contrast.matrix1))
+```
+
+- Calcul des pvalues
+
+```{r}
+#données réelles
+pval.CtrlvsHNO3 <- eBayesResultat$p.value[,1]
+pval.HNO3vsM1 <- eBayesResultat$p.value[,2]
+pval.HNO3vsM2 <- eBayesResultat$p.value[,3]
+pval.M1vsM2 <- eBayesResultat$p.value[,4]
+pval.BaselinevsCtrl <- eBayesResultat$p.value[,5]
+#données permutées
+perm_pval.CtrlvsHNO3 <- perm_eBayesResultat$p.value[,1]
+perm_pval.HNO3vsM1 <- perm_eBayesResultat$p.value[,2]
+perm_pval.HNO3vsM2 <- perm_eBayesResultat$p.value[,3]
+perm_pval.M1vsM2 <- perm_eBayesResultat$p.value[,4]
+perm_pval.BaselinevsCtrl <- perm_eBayesResultat$p.value[,5]
+```
+
+- Calcul des fold change
+
+```{r}
+#données réelles
+fc.CtrlvsHNO3 <- rowMeans(w_data[,design$Ctrl==1])-
+  rowMeans(w_data[,design$HNO3==1])
+fc.HNO3vsM1 <- rowMeans(w_data[,design$HNO3==1])-
+  rowMeans(w_data[,design$M1==1])
+fc.HNO3vsM2 <- rowMeans(w_data[,design$HNO3==1])-
+  rowMeans(w_data[,design$M2==1])
+fc.M1vsM2 <- rowMeans(w_data[,design$M1==1])-rowMeans(w_data[,design$M2==1])
+fc.BaselinevsCtrl <- rowMeans(w_data[,design$Baseline==1])-
+  rowMeans(w_data[,design$Ctrl==1])
+#données simulées
+perm_fc.CtrlvsHNO3 <- rowMeans(w_data[,permutated_design$Ctrl==1])-
+  rowMeans(w_data[,permutated_design$HNO3==1])
+perm_fc.HNO3vsM1 <- rowMeans(w_data[,permutated_design$HNO3==1])-
+  rowMeans(w_data[,permutated_design$M1==1])
+perm_fc.HNO3vsM2 <- rowMeans(w_data[,permutated_design$HNO3==1])-
+  rowMeans(w_data[,permutated_design$M2==1])
+perm_fc.M1vsM2 <- rowMeans(w_data[,permutated_design$M1==1])-
+  rowMeans(w_data[,permutated_design$M2==1])
+perm_fc.BaselinevsCtrl <- rowMeans(w_data[,permutated_design$Baseline==1])-
+  rowMeans(w_data[,permutated_design$Ctrl==1])
+```
+
+- Volcanoplot de la comparaison CtrlvsHNO3
+
+```{r}
+plot(fc.CtrlvsHNO3, pval.CtrlvsHNO3, main = "Volcano Plot\nCtrl vs HNO3", log = "y",xlab = "M(log2 fold change)", ylab = "p-value", pch = 20, col = "blue")
+points(perm_fc.CtrlvsHNO3, perm_pval.CtrlvsHNO3, type = "p", pch = 20, col = "red")
+legend("topleft", col=c("red","blue"), legend=c("perm", "real"),pch=20,bg="white")
+#seuil t1
+t1 <- 0.001
+#verification du seuil
+length(which(t.pval.CtrlvsHNO3 < t1)) #28 pvalues
+length(which(perm_t.pval.CtrlvsHNO3 < t1)) #26 pvalues
+abline(h= t1)
+```
+
+- Volcanoplot de la comparaison HNO3vsM1
+
+```{r}
+```
+
+- Volcanoplot de la comparaison HNO3vsM2
+
+```{r}
+```
+
+- Volcanoplot de la comparaison M1vsM2
+
+```{r}
+```
+
+- Volcanoplot de la comparaison BaselinevsCtrl
+
+```{r}
+```
+
+- 
+
+```{r}
+```
+

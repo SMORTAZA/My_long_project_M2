@@ -117,4 +117,10 @@ xx[[1]]
 - demande de confirmation à Madame AUDOUZE des seuils choisis pour les trois comparaisons avec les volcanoplots (envoi de mail)
 
 ##04/01/2018
-- 
+- pb avec l'enrichissement biologique à partir d'une liste de gène, n'arrive pas à utiliser GSEA, donc fait DAVID pour avoir quelques resultats.
+
+##05/01/2018
+- Utilisation de Panther (tres bonne visualisation) : pas de resultat avec CtrlvsHNO3
+- essayer M1vsM2
+- indiquer dans le readme qu'il faut se placer au niv du rep My_project pr lancer le code.
+- comparaison DAVID et Panther et Gorilla
