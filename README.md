@@ -1,16 +1,16 @@
 ## README
 
-## Date : 08/01/2018
+##### 08/01/2018
 
-# Intégration de données transcriptomiques dans un modèle d'hépatocytes humains
+# **<span style="color:#fb4141">Intégration de données transcriptomiques dans un modèle d'hépatocytes humains</span>**
 
-### Indications 
+### **Indications** 
 
 - Lancer les lignes de commandes dans R (ou RStudio) en se plaçant au niv du répertoire My_project
 (Plus tard, toutes les lignes de commande seront mis dans un seul script à part pour pouvoir lancer ensuite une ligne de commande - répertoire src/ pas à utiliser pour l'instant)
 - Tous les résultats obtenus (figures ...) sont dans le répertoire results/
 
-### I - Importation et Normalisation des données
+### **I - Importation et Normalisation des données**
 
 ```{r}
 #source("http://bioconductor.org/biocLite.R")
@@ -114,7 +114,7 @@ for (i in seq(2,ncol(data)-2)){
 }
 ```
 
-### II - Visualisation des données
+### **II - Visualisation des données**
 
 Singular Value Decomposition and outlier assessment
 
@@ -147,7 +147,7 @@ xlab = paste("Second Component (",round(svd$d[2]),"%)"), ylab = paste("Third Com
 text(V[,2], V[,3], pnames, col = cat_col)
 ```
 
-### III - Ttests (calcul des pvalues et fold change)
+### **III - Ttests (calcul des pvalues et fold change)**
 
 Prendre uniquement les colonnes qui nous intéressent pour les tests statistiques
 
@@ -274,7 +274,7 @@ perm_fc.BaselinevsCtrl <- rowMeans(w_data[,permutated_design$Baseline==1])-
   rowMeans(w_data[,permutated_design$Ctrl==1])
 ```
 
-### IV - Volcanoplots
+### **IV - Volcanoplots**
 
 Pour choisir le seuil, il faut que sous ce cut-off, il y ait plus de points bleus (données réelles) que de points rouges (données simulées) car c'est là où les gènes vont être le plus significatif.
 
@@ -351,7 +351,7 @@ length(which(perm_t.pval.BaselinevsCtrl < t5)) # 18 pvalues
 abline(h=t5)
 ```
 
-### V - ANOVA
+### **V - ANOVA**
 
 The Two-Way ANOVA [entre conditions X et Y]
 
@@ -444,7 +444,7 @@ rownames(new_genes) <- data$geneSymbol[matrix[,1]]
 heatmap(new_genes, main = "Baseline vs Ctrl")
 ```
 
-### VI - Enrichissement Biologique avec Pathways et GOterms
+### **VI - Enrichissement Biologique avec Pathways et GOterms**
 
 Pour chaque condition, les probes et noms de gènes sont enregistrés dans des fichiers textes pour pouvoir les utiliser par la suite
 
