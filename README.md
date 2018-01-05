@@ -1,10 +1,10 @@
-#README
-#Author : SMORTAZA
-#Date : 08/01/2018
+#####README
 
-##Intégration de données transcriptomiques et protéomiques dans un modèle d'hépatocytes humains
+#####Date : 08/01/2018
 
-## Indications 
+####Intégration de données transcriptomiques et protéomiques dans un modèle d'hépatocytes humains
+
+#### Indications 
 
 - Lancer les lignes de commandes dans R (ou RStudio) en se plaçant au niv du répertoire My_project
 (Plus tard, toutes les lignes de commande seront mis dans un seul script à part pour pouvoir lancer ensuite une ligne de commande - répertoire src/ pas à utiliser pour l'instant)
