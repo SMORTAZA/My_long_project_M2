@@ -2,7 +2,7 @@
 
 ## Date : 08/01/2018
 
-# Intégration de données transcriptomiques et protéomiques dans un modèle d'hépatocytes humains
+# Intégration de données transcriptomiques dans un modèle d'hépatocytes humains
 
 ### Indications 
 
