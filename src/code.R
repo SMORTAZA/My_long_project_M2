@@ -362,3 +362,7 @@ for (i in top5_sondes){
   capture.output(i, file="./results/Tests_statistiques/Significant_probes/probes_BaselinevsCtrl.txt", append = TRUE)
 }
 #rmq = les fichiers ont ete modifiés à la main par la suite.
+
+a <- intersect(names(which(sort(CtrlvsHNO3) < 0.05)),
+          names(which(sort(fc.CtrlvsHNO3) < 1)))[seq(50)]
+

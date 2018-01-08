@@ -382,19 +382,19 @@ BaselinevsCtrl <- eBayesResultat$p.value[,5]
 # 3°) pvalue < 0.05
 top1_1 <- which(CtrlvsHNO3 < 0.05 & fc.CtrlvsHNO3 < 1)
 top1_2 <- which(CtrlvsHNO3 < 0.05 & fc.CtrlvsHNO3 < 0.5)
-top1_3 <- which(CtrlvsHNO3 < 0.05)
-top2_1 <- which(HNO3vsM1 < 0.05 & fc.HNO3vsM1 < 1)
-top2_2 <- which(HNO3vsM1 < 0.05 & fc.HNO3vsM1 < 0.5)
-top2_3 <- which(HNO3vsM1 < 0.05) 
-top3_1 <- which(HNO3vsM2 < 0.05 & fc.HNO3vsM2 < 1)
-top3_2 <- which(HNO3vsM2 < 0.05 & fc.HNO3vsM2 < 0.5)
-top3_3 <- which(HNO3vsM2 < 0.05)
-top4_1 <- which(M1vsM2 < 0.05 & fc.M1vsM2 < 1)
-top4_2 <- which(M1vsM2 < 0.05 & fc.M1vsM2 < 0.5)
-top4_3 <- which(M1vsM2 < 0.05)
-top5_1 <- which(BaselinevsCtrl < 0.05 & fc.BaselinevsCtrl < 1)
-top5_2 <- which(BaselinevsCtrl < 0.05 & fc.BaselinevsCtrl < 0.5)
-top5_3 <- which(BaselinevsCtrl < 0.05)
+top1_3 <- which(CtrlvsHNO3 < 0.05) 
+top2_1 <- which(sort(HNO3vsM1) < 0.05 & sort(fc.HNO3vsM1 < 1))
+top2_2 <- which(sort(HNO3vsM1) < 0.05 & sort(fc.HNO3vsM1) < 0.5)
+top2_3 <- which(sort(HNO3vsM1) < 0.05)
+top3_1 <- which(sort(HNO3vsM2) < 0.05 & sort(fc.HNO3vsM2) < 1)
+top3_2 <- which(sort(HNO3vsM2) < 0.05 & sort(fc.HNO3vsM2) < 0.5)
+top3_3 <- which(sort(HNO3vsM2) < 0.05)
+top4_1 <- which(sort(M1vsM2) < 0.05 & sort(fc.M1vsM2) < 1)
+top4_2 <- which(sort(M1vsM2) < 0.05 & sort(fc.M1vsM2) < 0.5)
+top4_3 <- which(sort(M1vsM2) < 0.05)
+top5_1 <- which(sort(BaselinevsCtrl) < 0.05 & sort(fc.BaselinevsCtrl) < 1)
+top5_2 <- which(sort(BaselinevsCtrl) < 0.05 & sort(fc.BaselinevsCtrl) < 0.5)
+top5_3 <- which(sort(BaselinevsCtrl) < 0.05)
 #connaitre le nombre de genes significatifs
 length(top1_1);length(top1_2);length(top1_3)
 length(top2_1);length(top2_2);length(top2_3)
@@ -411,11 +411,11 @@ length(top5_1);length(top5_2);length(top5_3)
 ```{r}
 #heatmap1 avec les genes significatifs
 #avec les probes
-matrix <- as.matrix(top1_3)
+matrix <- as.matrix(top1_1)
 new <- as.matrix(w_data[matrix[,1],seq(6,15)])
-heatmap(new, main = "Ctrl vs HNO3 (3)", xlab = "samples             ", 
+heatmap(new, main = "TOP50 - Ctrl vs HNO3 (1)", xlab = "samples             ", 
         ylab="significant genes")
-#avec les genes
+#avec les genes (a modifier la matrice pour avoir des noms de genes car matrice modifiée - meme chose pr les autres comparaisons)
 new_genes <- as.matrix(w_data[matrix[,1],seq(6,15)])
 rownames(new_genes) <- data$geneSymbol[matrix[,1]]
 heatmap(new_genes, main = "Ctrl vs HNO3")
@@ -483,8 +483,8 @@ top5_2_sondes <- names(top5_2)
 top5_3_sondes <- names(top5_3)
 #noms des genes pour la premiere comparaison
 n = 0
-gene_names_1 <- vector(length = length(top1_sondes))
-for (i in top1_sondes){
+gene_names_1 <- vector(length = length(top1_3_sondes))
+for (i in top1_3_sondes){
   n = n + 1 
   #print(i)
   gene_symbol <- data$geneSymbol
@@ -492,14 +492,14 @@ for (i in top1_sondes){
   gene_name <- gene_symbol[which(data$probe_id == i)]
   gene_names_1[n] <- gene_name
   #enregistrer ds un fichier le nom des genes 
-  capture.output(gene_name, file="./results/Tests_statistiques/Significant_genes/CtrlvsHNO3.txt", append = TRUE)
+  capture.output(gene_name, file="./results/Tests_statistiques/Significant_genes/CtrlvsHNO3_3.txt", append = TRUE)
   #enregistrer les probes
-  capture.output(i, file="./results/Tests_statistiques/Significant_probes/probes_CtrlvsHNO3.txt", append = TRUE)
+  capture.output(i, file="./results/Tests_statistiques/Significant_probes/probes_CtrlvsHNO3_3.txt", append = TRUE)
 }
 #noms des genes pour la deuxième comparaison
 n = 0
-gene_names_2 <- vector(length = length(top2_sondes))
-for (i in top2_sondes){
+gene_names_2 <- vector(length = length(top2_3_sondes))
+for (i in top2_3_sondes){
   n = n + 1 
   #print(i)
   gene_symbol <- data$geneSymbol
@@ -507,14 +507,14 @@ for (i in top2_sondes){
   gene_name <- gene_symbol[which(data$probe_id == i)]
   gene_names_2[n] <- gene_name
   #enregistrer ds un fichier le nom des genes 
-  capture.output(gene_name, file="./results/Tests_statistiques/Significant_genes/HNO3vsM1.txt", append = TRUE)
+  capture.output(gene_name, file="./results/Tests_statistiques/Significant_genes/HNO3vsM1_3.txt", append = TRUE)
   #enregistrer les probes
-  capture.output(i, file="./results/Tests_statistiques/Significant_probes/probes_HNO3vsM1.txt", append = TRUE)
+  capture.output(i, file="./results/Tests_statistiques/Significant_probes/probes_HNO3vsM1_3.txt", append = TRUE)
 }
 #noms des genes pour la troisième comparaison
 n = 0
-gene_names_3 <- vector(length = length(top3_sondes))
-for (i in top3_sondes){
+gene_names_3 <- vector(length = length(top3_3_sondes))
+for (i in top3_3_sondes){
   n = n + 1 
   #print(i)
   gene_symbol <- data$geneSymbol
@@ -522,14 +522,14 @@ for (i in top3_sondes){
   gene_name <- gene_symbol[which(data$probe_id == i)]
   gene_names_3[n] <- gene_name
   #enregistrer ds un fichier le nom des genes 
-  capture.output(gene_name, file="./results/Tests_statistiques/Significant_genes/HNO3vsM2.txt", append = TRUE)
+  capture.output(gene_name, file="./results/Tests_statistiques/Significant_genes/HNO3vsM2_3.txt", append = TRUE)
   #enregistrer les probes
-  capture.output(i, file="./results/Tests_statistiques/Significant_probes/probes_HNO3vsM2.txt", append = TRUE)
+  capture.output(i, file="./results/Tests_statistiques/Significant_probes/probes_HNO3vsM2_3.txt", append = TRUE)
 }
 #noms des genes pour la quatrieme comparaison
 n = 0
-gene_names_4 <- vector(length = length(top4_sondes))
-for (i in top4_sondes){
+gene_names_4 <- vector(length = length(top4_3_sondes))
+for (i in top4_3_sondes){
   n = n + 1 
   #print(i)
   gene_symbol <- data$geneSymbol
@@ -537,14 +537,14 @@ for (i in top4_sondes){
   gene_name <- gene_symbol[which(data$probe_id == i)]
   gene_names_4[n] <- gene_name
   #enregistrer ds un fichier le nom des genes 
-  capture.output(gene_name, file="./results/Tests_statistiques/Significant_genes/M1vsM2.txt", append = TRUE)
+  capture.output(gene_name, file="./results/Tests_statistiques/Significant_genes/M1vsM2_3.txt", append = TRUE)
   #enregistrer les probes
-  capture.output(i, file="./results/Tests_statistiques/Significant_probes/probes_M1vsM2.txt", append = TRUE)
+  capture.output(i, file="./results/Tests_statistiques/Significant_probes/probes_M1vsM2_3.txt", append = TRUE)
 }
 #noms des genes pour la cinquieme comparaison
 n = 0
-gene_names_5 <- vector(length = length(top5_sondes))
-for (i in top5_sondes){
+gene_names_5 <- vector(length = length(top5_3_sondes))
+for (i in top5_3_sondes){
   n = n + 1 
   #print(i)
   gene_symbol <- data$geneSymbol
@@ -552,9 +552,9 @@ for (i in top5_sondes){
   gene_name <- gene_symbol[which(data$probe_id == i)]
   gene_names_5[n] <- gene_name
   #enregistrer ds un fichier le nom des genes 
-  capture.output(gene_name, file="./results/Tests_statistiques/Significant_genes/BaselinevsCtrl.txt", append = TRUE)
+  capture.output(gene_name, file="./results/Tests_statistiques/Significant_genes/BaselinevsCtrl_3.txt", append = TRUE)
   #enregistrer les probes
-  capture.output(i, file="./results/Tests_statistiques/Significant_probes/probes_BaselinevsCtrl.txt", append = TRUE)
+  capture.output(i, file="./results/Tests_statistiques/Significant_probes/probes_BaselinevsCtrl_3.txt", append = TRUE)
 }
 #rmq = les fichiers ont ete modifiés à la main par la suite.
 
