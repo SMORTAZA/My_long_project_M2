@@ -153,10 +153,10 @@ Prendre uniquement les colonnes qui nous intéressent pour les tests statistique
 
 ```{r}
 #rearrangement des col utiles de data
-w_data=data[,c(1,6,11,16,21,2,7,12,17,22,3,8,13,18,23,4,9,
-               14,19,24,5,10,15,20,25)]
+#w_data=data[,c(1,6,11,16,21,2,7,12,17,22,3,8,13,18,23,4,9,
+#               14,19,24,5,10,15,20,25)]
 #Enregistrement du nouveau tableau
-save(w_data, file = "./results/w_data.RData")
+#save(w_data, file = "./results/w_data.RData")
 #ouverture de ces données
 load('./results/data.RData')
 load('./results/w_data.RData')
@@ -204,11 +204,11 @@ dim(design)
 #chargement des données
 load('./results/permutated_design.RData')
 #obtention des col permutées fom w_data
-Baseline_permutated <- w_data[,c(permutated_design$Baseline==1)]
-Ctrl_permutated <- w_data[,c(permutated_design$Ctrl==1)]
-HNO3_permutated <- w_data[,c(permutated_design$HNO3==1)]
-M1_permutated <- w_data[,c(permutated_design$M1==1)]
-M2_permutated <- w_data[,c(permutated_design$M2==1)]
+Baseline_permutated <- as.matrix(w_data[,c(permutated_design$Baseline==1)])
+Ctrl_permutated <- as.matrix(w_data[,c(permutated_design$Ctrl==1)])
+HNO3_permutated <- as.matrix(w_data[,c(permutated_design$HNO3==1)])
+M1_permutated <- as.matrix(w_data[,c(permutated_design$M1==1)])
+M2_permutated <- as.matrix(w_data[,c(permutated_design$M2==1)])
 ```
 
 Obtention des pvalues avec un ttest.
@@ -261,6 +261,8 @@ fc.HNO3vsM2 <- rowMeans(w_data[,design$HNO3==1])-
   rowMeans(w_data[,design$M2==1])
 fc.M1vsM2 <- rowMeans(w_data[,design$M1==1])-
   rowMeans(w_data[,design$M2==1])
+fc.BaselinevsCtrl <- rowMeans(w_data[,design$Baseline==1])-
+  rowMeans(w_data[,design$Ctrl==1])
 #2°) Données simulées
 perm_fc.CtrlvsHNO3 <- rowMeans(w_data[,permutated_design$Ctrl==1])-
   rowMeans(w_data[,permutated_design$HNO3==1])
@@ -276,79 +278,79 @@ perm_fc.BaselinevsCtrl <- rowMeans(w_data[,permutated_design$Baseline==1])-
 
 ### **IV - Volcanoplots**
 
+Plot de -log10(pvalues) vs foldchange (pour avoir un bon visuel)
 Pour choisir le seuil, il faut que sous ce cut-off, il y ait plus de points bleus (données réelles) que de points rouges (données simulées) car c'est là où les gènes vont être le plus significatif.
 
 ```{r}
 
-plot(fc.CtrlvsHNO3, t.pval.CtrlvsHNO3, main = "Volcano Plot\nCtrl vs HNO3", 
-     log = "y",xlab = "M(log2 fold change)", ylab = "p-value", pch = 20, 
+plot(fc.CtrlvsHNO3, -log10(t.pval.CtrlvsHNO3), main = "Volcano Plot\nCtrl vs HNO3" 
+     ,xlab = "M(log2 fold change)", ylab = "-log10(p-value)", pch = 20, 
      col = "blue")
-points(perm_fc.CtrlvsHNO3, perm_t.pval.CtrlvsHNO3, type = "p", pch = 20, 
+points(perm_fc.CtrlvsHNO3, -log10(perm_t.pval.CtrlvsHNO3), type = "p", pch = 20, 
        col = "red")
 legend("topleft", col=c("red","blue"), legend=c("perm", "real"),pch=20,
        bg="white")
 #seuil t1
-t1 <- 0.001
+t1 <- 0.05
 #verification du seuil
-length(which(t.pval.CtrlvsHNO3 < t1)) #28 pvalues
-length(which(perm_t.pval.CtrlvsHNO3 < t1)) #26 pvalues
-abline(h= t1)
+length(which(t.pval.CtrlvsHNO3 < t1 && fc.CtrlvsHNO3 < 1)) 
+length(which(perm_t.pval.CtrlvsHNO3 < t1)) 
+#abline(h= t1)
 #plot du volcano de la seconde comparaison
-plot(fc.HNO3vsM1, t.pval.HNO3vsM1, main = "Volcano Plot\nHNO3 vs M1", 
-     log = "y",xlab = "M(log2 fold change)", ylab = "p-value", pch = 20,
+plot(fc.HNO3vsM1, -log10(t.pval.HNO3vsM1), main = "Volcano Plot\nHNO3 vs M1", 
+     xlab = "M(log2 fold change)", ylab = "-log10(p-value)", pch = 20,
      col = "blue")
-points(perm_fc.HNO3vsM1, perm_t.pval.HNO3vsM1, type = "p", pch = 20,
+points(perm_fc.HNO3vsM1, -log10(perm_t.pval.HNO3vsM1), type = "p", pch = 20,
        col = "red")
 legend("topleft", col=c("red","blue"), legend=c("perm", "real"),pch=20,
        bg="white")
 #seuil t2
-t2 <- 0.004
-#verification du seuil --> deja ici bcp trop de genes seront selectionnés
-length(which(t.pval.HNO3vsM1 < t2)) # 290 pvalues
-length(which(perm_t.pval.HNO3vsM1 < t2)) # 21 pvalues
-abline(h=t2)
+t2 <- 0.05
+#verification du seuil 
+length(which(t.pval.HNO3vsM1 < t2)) 
+length(which(perm_t.pval.HNO3vsM1 < t2)) 
+#abline(h=t2)
 #plot du volcano de la troisieme comparaison
-plot(fc.HNO3vsM2, t.pval.HNO3vsM2, main = "Volcano Plot\nHNO3 vs M2", 
-     log = "y",xlab = "M(log2 fold change)", ylab = "p-value", pch = 20, 
+plot(fc.HNO3vsM2, -log10(t.pval.HNO3vsM2), main = "Volcano Plot\nHNO3 vs M2", 
+     xlab = "M(log2 fold change)", ylab = "-log10(p-value)", pch = 20, 
      col = "blue")
-points(perm_fc.HNO3vsM2, perm_t.pval.HNO3vsM2, type = "p", pch = 20, 
+points(perm_fc.HNO3vsM2, -log10(perm_t.pval.HNO3vsM2), type = "p", pch = 20, 
        col = "red")
 legend("topleft", col=c("red","blue"), legend=c("perm", "real"),pch=20,
        bg="white")
 #seuil t3
-t3 <- 0.004
-#verification du seuil --> bcp de genes seront selectionnés
-length(which(t.pval.HNO3vsM2 < t3)) #300 pvalues
-length(which(perm_t.pval.HNO3vsM2 < t3)) #157 pvalues
-abline(h=t3)
+t3 <- 0.05
+#verification du seuil 
+length(which(t.pval.HNO3vsM2 < t3)) 
+length(which(perm_t.pval.HNO3vsM2 < t3)) 
+#abline(h=t3)
 #plot du volcano de la quatrieme comparaison
-plot(fc.M1vsM2, t.pval.M1vsM2, main = "Volcano Plot\nM1 vs M2", 
-     log = "y", xlab = "M(log2 fold change)", ylab = "p-value", 
+plot(fc.M1vsM2, -log10(t.pval.M1vsM2), main = "Volcano Plot\nM1 vs M2", 
+     xlab = "M(log2 fold change)", ylab = "-log10(p-value)", 
      pch = 20, col = "blue")
-points(perm_fc.M1vsM2, perm_t.pval.M1vsM2, type = "p", pch = 20, 
+points(perm_fc.M1vsM2, -log10(perm_t.pval.M1vsM2), type = "p", pch = 20, 
        col = "red")
 legend("topleft", col=c("red","blue"), legend=c("perm", "real"),pch=20,
        bg="white")
 #seuil t4
-t4 <- 0.02
-#verification du seuil --> bcp de genes seront selectionnés
-length(which(t.pval.M1vsM2 < t4)) # 668 pvalues
-length(which(perm_t.pval.M1vsM2 < t4)) # 29 pvalues
-abline(h=t4)
+t4 <- 0.05
+#verification du seuil 
+length(which(t.pval.M1vsM2 < t4)) 
+length(which(perm_t.pval.M1vsM2 < t4)) 
+#abline(h=t4)
 #plot du volcano de la cinquieme comparaison
-plot(fc.BaselinevsCtrl, t.pval.BaselinevsCtrl, main = "Volcano Plot\n
-     Baseline vs Ctrl", log = "y",xlab = "M(log2 fold change)", 
-     ylab = "p-value", pch = 20, col = "blue")
-points(perm_fc.BaselinevsCtrl, perm_t.pval.BaselinevsCtrl, type = "p", 
+plot(fc.BaselinevsCtrl, -log10(t.pval.BaselinevsCtrl), main = "Volcano Plot\n Baseline vs Ctrl", xlab = "M(log2 fold change)", 
+     ylab = "-log10(p-value)", pch = 20, col = "blue")
+points(perm_fc.BaselinevsCtrl, -log10(perm_t.pval.BaselinevsCtrl), type = "p", 
        pch = 20, col = "red")
 legend("topleft", col=c("red","blue"), legend=c("perm", "real"),pch=20,
        bg="white")
 #seuil t5
-t5 <- 0.02
-#verification du seuil --> bcp de genes seront selectionnés
-length(which(t.pval.BaselinevsCtrl < t5)) # 2315 pvalues
-length(which(perm_t.pval.BaselinevsCtrl < t5)) # 18 pvalues
-abline(h=t5)
+t5 <- 0.05
+#verification du seuil 
+length(which(t.pval.BaselinevsCtrl < t5)) 
+length(which(perm_t.pval.BaselinevsCtrl < t5)) 
+#abline(h=t5)
 ```
 
 ### **V - ANOVA**
