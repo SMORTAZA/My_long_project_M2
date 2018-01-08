@@ -376,30 +376,44 @@ HNO3vsM1 <- eBayesResultat$p.value[,2]
 HNO3vsM2 <- eBayesResultat$p.value[,3]
 M1vsM2 <- eBayesResultat$p.value[,4]
 BaselinevsCtrl <- eBayesResultat$p.value[,5]
-#rechercher les genes significatifs
-top1 <- which(sort(CtrlvsHNO3) <= t1)
-top2 <- which(HNO3vsM1 <= t2) 
-top3 <- which(HNO3vsM2 <= t3)
-top4 <- which(M1vsM2 <= t4)
-top5 <- which(BaselinevsCtrl <= t5)
+#rechercher les genes significatifs selon trois types d'analyses
+# 1°) pvalue < 0.05 et fc < 1
+# 2°) pvalue < 0.05 et fc < 0.5
+# 3°) pvalue < 0.05
+top1_1 <- which(CtrlvsHNO3 < 0.05 & fc.CtrlvsHNO3 < 1)
+top1_2 <- which(CtrlvsHNO3 < 0.05 & fc.CtrlvsHNO3 < 0.5)
+top1_3 <- which(CtrlvsHNO3 < 0.05)
+top2_1 <- which(HNO3vsM1 < 0.05 & fc.HNO3vsM1 < 1)
+top2_2 <- which(HNO3vsM1 < 0.05 & fc.HNO3vsM1 < 0.5)
+top2_3 <- which(HNO3vsM1 < 0.05) 
+top3_1 <- which(HNO3vsM2 < 0.05 & fc.HNO3vsM2 < 1)
+top3_2 <- which(HNO3vsM2 < 0.05 & fc.HNO3vsM2 < 0.5)
+top3_3 <- which(HNO3vsM2 < 0.05)
+top4_1 <- which(M1vsM2 < 0.05 & fc.M1vsM2 < 1)
+top4_2 <- which(M1vsM2 < 0.05 & fc.M1vsM2 < 0.5)
+top4_3 <- which(M1vsM2 < 0.05)
+top5_1 <- which(BaselinevsCtrl < 0.05 & fc.BaselinevsCtrl < 1)
+top5_2 <- which(BaselinevsCtrl < 0.05 & fc.BaselinevsCtrl < 0.5)
+top5_3 <- which(BaselinevsCtrl < 0.05)
 #connaitre le nombre de genes significatifs
-length(top1)
-length(top2)
-length(top3)
-length(top4)
-length(top5)
+length(top1_1);length(top1_2);length(top1_3)
+length(top2_1);length(top2_2);length(top2_3)
+length(top3_1);length(top3_2);length(top3_3)
+length(top4_1);length(top4_2);length(top4_3)
+length(top5_1);length(top5_2);length(top5_3)
 ```
 
 2 types de Heatmap pour chacune des cinq conditions avec les genes significatifs sélectionnés:
-- 1°) avec les probes
+- 1°) avec les probes (comme beaucoup, alors probes pas très visibles)
 - 2°) avec les noms des gènes (par contre, beaucoup de NA, donc pas informatif)
+(le code est là, mais pas présent dans les résultats car ne sert à rien)
 
 ```{r}
 #heatmap1 avec les genes significatifs
 #avec les probes
-matrix <- as.matrix(top1)
+matrix <- as.matrix(top1_3)
 new <- as.matrix(w_data[matrix[,1],seq(6,15)])
-heatmap(new, main = "Ctrl vs HNO3", xlab = "samples             ", 
+heatmap(new, main = "Ctrl vs HNO3 (3)", xlab = "samples             ", 
         ylab="significant genes")
 #avec les genes
 new_genes <- as.matrix(w_data[matrix[,1],seq(6,15)])
@@ -407,9 +421,9 @@ rownames(new_genes) <- data$geneSymbol[matrix[,1]]
 heatmap(new_genes, main = "Ctrl vs HNO3")
 #heatmap2 avec les genes significatifs
 #avec les probes
-matrix <- as.matrix(top2)
+matrix <- as.matrix(top2_3)
 new <- as.matrix(w_data[matrix[,1],seq(11,20)])
-heatmap(new, main = "HNO3 vs M1", xlab = "samples           ", 
+heatmap(new, main = "HNO3 vs M1 (3)", xlab = "samples              ", 
         ylab="significant genes")
 #avec les genes
 new_genes <- as.matrix(w_data[matrix[,1],seq(11,20)])
@@ -417,9 +431,9 @@ rownames(new_genes) <- data$geneSymbol[matrix[,1]]
 heatmap(new_genes, main = "HNO3 vs M1")
 #heatmap3 avec les genes significatifs
 #avec les probes
-matrix <- as.matrix(top3)
+matrix <- as.matrix(top3_3)
 new <- as.matrix(w_data[matrix[,1],c(11,12,13,14,15,21,22,23,24,25)])
-heatmap(new, main = "HNO3 vs M2", xlab = "samples            ", 
+heatmap(new, main = "HNO3 vs M2 (3)", xlab = "samples                       ", 
         ylab="significant genes")
 #avec les genes
 new_genes <- as.matrix(w_data[matrix[,1],c(11,12,13,14,15,21,22,23,24,25)])
@@ -427,18 +441,18 @@ rownames(new_genes) <- data$geneSymbol[matrix[,1]]
 heatmap(new_genes, main = "HNO3 vs M2")
 #heatmap4 avec les genes significatifs
 #avec les probes
-matrix <- as.matrix(top4)
+matrix <- as.matrix(top4_3)
 new <- as.matrix(w_data[matrix[,1],c(16,17,18,19,20,21,22,23,24,25)])
-heatmap(new, main = "M1 vs M2", xlab = "samples", ylab="significant genes")
+heatmap(new, main = "M1 vs M2 (3)", xlab = "samples", ylab="significant genes")
 #avec les genes
 new_genes <- as.matrix(w_data[matrix[,1],c(16,17,18,19,20,21,22,23,24,25)])
 rownames(new_genes) <- data$geneSymbol[matrix[,1]]
 heatmap(new_genes, main = "M1 vs M2")
 #heatmap5 avec les genes significatifs
 #avec les probes
-matrix <- as.matrix(top5)
+matrix <- as.matrix(top5_3)
 new <- as.matrix(w_data[matrix[,1],seq(1,10)])
-heatmap(new, main = "Baseline vs Ctrl", xlab = "samples             ", 
+heatmap(new, main = "Baseline vs Ctrl (3)", xlab = "samples                ", 
         ylab="significant genes")
 #avec les genes
 new_genes <- as.matrix(w_data[matrix[,1],seq(1,10)])
@@ -451,6 +465,22 @@ heatmap(new_genes, main = "Baseline vs Ctrl")
 Pour chaque condition, les probes et noms de gènes sont enregistrés dans des fichiers textes pour pouvoir les utiliser par la suite
 
 ```{r}
+#avoir les probes pour chaque analyse
+top1_1_sondes <- names(top1_1)
+top1_2_sondes <- names(top1_2)
+top1_3_sondes <- names(top1_3)
+top2_1_sondes <- names(top2_1)
+top2_2_sondes <- names(top2_2)
+top2_3_sondes <- names(top2_3)
+top3_1_sondes <- names(top3_1)
+top3_2_sondes <- names(top3_2)
+top3_3_sondes <- names(top3_3)
+top4_1_sondes <- names(top4_1)
+top4_2_sondes <- names(top4_2)
+top4_3_sondes <- names(top4_3)
+top5_1_sondes <- names(top5_1)
+top5_2_sondes <- names(top5_2)
+top5_3_sondes <- names(top5_3)
 #noms des genes pour la premiere comparaison
 n = 0
 gene_names_1 <- vector(length = length(top1_sondes))
