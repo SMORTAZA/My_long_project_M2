@@ -7,6 +7,7 @@
 ### **Indications** 
 
 - Lancer les lignes de commandes dans R (ou RStudio) en se plaçant au niv du répertoire My_project
+- La version et les packages présents dans mon RStudio sont montrés dans sessionInfo.png
 (Plus tard, toutes les lignes de commande seront mis dans un seul script à part pour pouvoir lancer ensuite une ligne de commande - répertoire src/ pas à utiliser pour l'instant)
 - Tous les résultats obtenus (figures ...) sont dans le répertoire results/
 
