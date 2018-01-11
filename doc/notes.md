@@ -124,3 +124,9 @@ xx[[1]]
 - essayer M1vsM2
 - indiquer dans le readme qu'il faut se placer au niv du rep My_project pr lancer le code.
 - comparaison DAVID et Panther et Gorilla
+
+##09/01/2018
+- rdv avec Mme AUDOUZE et Mme AGGERBECK pour discuter des resultats
+
+##11/01/2018
+- plot de la variance expliquée pr chaque composant principal.
