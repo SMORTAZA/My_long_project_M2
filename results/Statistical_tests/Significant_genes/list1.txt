@@ -1,0 +1,173 @@
+9075	claudin 2(CLDN2)	Homo sapiens
+6568	solute carrier family 17 member 1(SLC17A1)	Homo sapiens
+2202	EGF containing fibulin like extracellular matrix protein 1(EFEMP1)	Homo sapiens
+4071	transmembrane 4 L six family member 1(TM4SF1)	Homo sapiens
+558	AXL receptor tyrosine kinase(AXL)	Homo sapiens
+1634	decorin(DCN)	Homo sapiens
+147372	collagen and calcium binding EGF domains 1(CCBE1)	Homo sapiens
+57545	coiled-coil and C2 domain containing 2A(CC2D2A)	Homo sapiens
+51222	zinc finger protein 219(ZNF219)	Homo sapiens
+7042	transforming growth factor beta 2(TGFB2)	Homo sapiens
+2737	GLI family zinc finger 3(GLI3)	Homo sapiens
+284	angiopoietin 1(ANGPT1)	Homo sapiens
+55244	solute carrier family 47 member 1(SLC47A1)	Homo sapiens
+8820	HESX homeobox 1(HESX1)	Homo sapiens
+9064	mitogen-activated protein kinase kinase kinase 6(MAP3K6)	Homo sapiens
+100422969	microRNA 2909(MIR2909)	Homo sapiens
+128434	V-set and transmembrane domain containing 2 like(VSTM2L)	Homo sapiens
+1893	extracellular matrix protein 1(ECM1)	Homo sapiens
+80114	BicC family RNA binding protein 1(BICC1)	Homo sapiens
+7057	thrombospondin 1(THBS1)	Homo sapiens
+1608	diacylglycerol kinase gamma(DGKG)	Homo sapiens
+5470	protein phosphatase with EF-hand domain 2(PPEF2)	Homo sapiens
+102723716	uncharacterized LOC102723716(LOC102723716)	Homo sapiens
+440742	uncharacterized LOC440742(LOC440742)	Homo sapiens
+306	annexin A3(ANXA3)	Homo sapiens
+85371	KIAA1656 protein(KIAA1656)	Homo sapiens
+1401	C-reactive protein(CRP)	Homo sapiens
+101928176	long intergenic non-protein coding RNA 1411(LINC01411)	Homo sapiens
+10730	YME1 like 1 ATPase(YME1L1)	Homo sapiens
+100505681	NAPA antisense RNA 1(NAPA-AS1)	Homo sapiens
+403323	uncharacterized LOC403323(LOC403323)	Homo sapiens
+56944	olfactomedin like 3(OLFML3)	Homo sapiens
+5465	peroxisome proliferator activated receptor alpha(PPARA)	Homo sapiens
+100500919	microRNA 548y(MIR548Y)	Homo sapiens
+345274	solute carrier family 10 member 6(SLC10A6)	Homo sapiens
+6001	regulator of G-protein signaling 10(RGS10)	Homo sapiens
+80069	long intergenic non-protein coding RNA 574(LINC00574)	Homo sapiens
+2947	glutathione S-transferase mu 3(GSTM3)	Homo sapiens
+5734	prostaglandin E receptor 4(PTGER4)	Homo sapiens
+4051	cytochrome P450 family 4 subfamily F member 3(CYP4F3)	Homo sapiens
+347918	EP400 N-terminal like(EP400NL)	Homo sapiens
+1627	drebrin 1(DBN1)	Homo sapiens
+151742	protein phosphatase, Mg2+/Mn2+ dependent 1L(PPM1L)	Homo sapiens
+83445	germ cell associated 1(GSG1)	Homo sapiens
+10468	follistatin(FST)	Homo sapiens
+4059	basal cell adhesion molecule (Lutheran blood group)(BCAM)	Homo sapiens
+90338	zinc finger protein 160(ZNF160)	Homo sapiens
+100996266	long intergenic non-protein coding RNA 1510(LINC01510)	Homo sapiens
+100131755	armadillo repeat containing, X-linked 4(ARMCX4)	Homo sapiens
+4062	lymphocyte antigen 6 complex, locus H(LY6H)	Homo sapiens
+83931	serine/threonine kinase 40(STK40)	Homo sapiens
+59271	eva-1 homolog C(EVA1C)	Homo sapiens
+100505890	SORCS3 antisense RNA 1(SORCS3-AS1)	Homo sapiens
+7827	NPHS2, podocin(NPHS2)	Homo sapiens
+56132	protocadherin beta 3(PCDHB3)	Homo sapiens
+344454	aldehyde oxidase 2 pseudogene(AOX2P)	Homo sapiens
+4958	osteomodulin(OMD)	Homo sapiens
+29103	DnaJ heat shock protein family (Hsp40) member C15(DNAJC15)	Homo sapiens
+10383	tubulin beta 4B class IVb(TUBB4B)	Homo sapiens
+51265	cyclin dependent kinase like 3(CDKL3)	Homo sapiens
+10642	insulin like growth factor 2 mRNA binding protein 1(IGF2BP1)	Homo sapiens
+60489	apolipoprotein B mRNA editing enzyme catalytic subunit 3G(APOBEC3G)	Homo sapiens
+1824	desmocollin 2(DSC2)	Homo sapiens
+26061	2-hydroxyacyl-CoA lyase 1(HACL1)	Homo sapiens
+100302275	microRNA 548l(MIR548L)	Homo sapiens
+9537	tumor protein p53 inducible protein 11(TP53I11)	Homo sapiens
+10085	EGF like repeats and discoidin domains 3(EDIL3)	Homo sapiens
+101927379	uncharacterized LOC101927379(LOC101927379)	Homo sapiens
+148418	sterile alpha motif domain containing 13(SAMD13)	Homo sapiens
+102724749	uncharacterized LOC102724749(LOC102724749)	Homo sapiens
+6366	C-C motif chemokine ligand 21(CCL21)	Homo sapiens
+8705	beta-1,3-galactosyltransferase 4(B3GALT4)	Homo sapiens
+857	caveolin 1(CAV1)	Homo sapiens
+51313	family with sequence similarity 198 member B(FAM198B)	Homo sapiens
+51557	lengsin, lens protein with glutamine synthetase domain(LGSN)	Homo sapiens
+130399	activin A receptor type 1C(ACVR1C)	Homo sapiens
+27165	glutaminase 2(GLS2)	Homo sapiens
+389337	Rho guanine nucleotide exchange factor 37(ARHGEF37)	Homo sapiens
+860	runt related transcription factor 2(RUNX2)	Homo sapiens
+51316	placenta specific 8(PLAC8)	Homo sapiens
+84807	NFKB inhibitor delta(NFKBID)	Homo sapiens
+83858	ATPase family, AAA domain containing 3B(ATAD3B)	Homo sapiens
+64850	ethanolamine-phosphate phospho-lyase(ETNPPL)	Homo sapiens
+1805	dermatopontin(DPT)	Homo sapiens
+3239	homeobox D13(HOXD13)	Homo sapiens
+143888	KDEL motif containing 2(KDELC2)	Homo sapiens
+441027	transmembrane protein 150C(TMEM150C)	Homo sapiens
+1556	cytochrome P450 family 2 subfamily B member 7, pseudogene(CYP2B7P)	Homo sapiens
+79191	iroquois homeobox 3(IRX3)	Homo sapiens
+10882	complement C1q like 1(C1QL1)	Homo sapiens
+51076	cutC copper transporter(CUTC)	Homo sapiens
+50515	carbohydrate sulfotransferase 11(CHST11)	Homo sapiens
+100996671	uncharacterized LOC100996671(LOC100996671)	Homo sapiens
+55124	piwi like RNA-mediated gene silencing 2(PIWIL2)	Homo sapiens
+84649	diacylglycerol O-acyltransferase 2(DGAT2)	Homo sapiens
+6913	T-box 15(TBX15)	Homo sapiens
+54851	ankyrin repeat domain 49(ANKRD49)	Homo sapiens
+10563	C-X-C motif chemokine ligand 13(CXCL13)	Homo sapiens
+23426	glutamate receptor interacting protein 1(GRIP1)	Homo sapiens
+101928565	uncharacterized LOC101928565(LOC101928565)	Homo sapiens
+5837	phosphorylase, glycogen, muscle(PYGM)	Homo sapiens
+4739	neural precursor cell expressed, developmentally down-regulated 9(NEDD9)	Homo sapiens
+50807	ArfGAP with SH3 domain, ankyrin repeat and PH domain 1(ASAP1)	Homo sapiens
+2053	epoxide hydrolase 2(EPHX2)	Homo sapiens
+102724965	collagen alpha-2(I) chain-like(LOC102724965)	Homo sapiens
+10590	secretagogin, EF-hand calcium binding protein(SCGN)	Homo sapiens
+344657	leucine rich repeats and IQ motif containing 4(LRRIQ4)	Homo sapiens
+54075	CHODL antisense RNA 1(CHODL-AS1)	Homo sapiens
+83544	dynein axonemal light chain 1(DNAL1)	Homo sapiens
+11077	heat shock transcription factor 2 binding protein(HSF2BP)	Homo sapiens
+8424	gamma-butyrobetaine hydroxylase 1(BBOX1)	Homo sapiens
+3679	integrin subunit alpha 7(ITGA7)	Homo sapiens
+23767	fibronectin leucine rich transmembrane protein 3(FLRT3)	Homo sapiens
+729178	STXBP5 antisense RNA 1(STXBP5-AS1)	Homo sapiens
+5599	mitogen-activated protein kinase 8(MAPK8)	Homo sapiens
+101927210	uncharacterized LOC101927210(LOC101927210)	Homo sapiens
+6716	steroid 5 alpha-reductase 2(SRD5A2)	Homo sapiens
+389136	vestigial like family member 3(VGLL3)	Homo sapiens
+23460	ATP binding cassette subfamily A member 6(ABCA6)	Homo sapiens
+442184	olfactory receptor family 2 subfamily B member 3(OR2B3)	Homo sapiens
+3453	interferon alpha 22, pseudogene(IFNA22P)	Homo sapiens
+56241	sushi domain containing 2(SUSD2)	Homo sapiens
+6694	secreted phosphoprotein 2(SPP2)	Homo sapiens
+10343	polycystin (PKD) family receptor for egg jelly(PKDREJ)	Homo sapiens
+23209	megalencephalic leukoencephalopathy with subcortical cysts 1(MLC1)	Homo sapiens
+91663	myeloid associated differentiation marker(MYADM)	Homo sapiens
+6690	serine peptidase inhibitor, Kazal type 1(SPINK1)	Homo sapiens
+27330	ribosomal protein S6 kinase A6(RPS6KA6)	Homo sapiens
+101928509	uncharacterized LOC101928509(LOC101928509)	Homo sapiens
+10227	major facilitator superfamily domain containing 10(MFSD10)	Homo sapiens
+101927235	uncharacterized LOC101927235(LOC101927235)	Homo sapiens
+390201	olfactory receptor family 10 subfamily V member 1(OR10V1)	Homo sapiens
+23743	betaine--homocysteine S-methyltransferase 2(BHMT2)	Homo sapiens
+23255	microtubule crosslinking factor 1(MTCL1)	Homo sapiens
+7222	transient receptor potential cation channel subfamily C member 3(TRPC3)	Homo sapiens
+406939	microRNA 147a(MIR147A)	Homo sapiens
+101928496	long intergenic non-protein coding RNA 1492(LINC01492)	Homo sapiens
+64759	tensin 3(TNS3)	Homo sapiens
+3081	homogentisate 1,2-dioxygenase(HGD)	Homo sapiens
+11343	monoglyceride lipase(MGLL)	Homo sapiens
+641654	hepatocellular carcinoma, down-regulated 1(HEPN1)	Homo sapiens
+101929450	uncharacterized LOC101929450(LOC101929450)	Homo sapiens
+81501	dendrocyte expressed seven transmembrane protein(DCSTAMP)	Homo sapiens
+677794	small nucleolar RNA, H/ACA box 2B(SNORA2B)	Homo sapiens
+54331	G protein subunit gamma 2(GNG2)	Homo sapiens
+7743	zinc finger protein 189(ZNF189)	Homo sapiens
+3852	keratin 5(KRT5)	Homo sapiens
+57864	solute carrier family 46 member 2(SLC46A2)	Homo sapiens
+100616463	microRNA 4452(MIR4452)	Homo sapiens
+10293	TRAF interacting protein(TRAIP)	Homo sapiens
+169611	olfactomedin like 2A(OLFML2A)	Homo sapiens
+374462	protein tyrosine phosphatase, receptor type Q(PTPRQ)	Homo sapiens
+2646	glucokinase regulator(GCKR)	Homo sapiens
+5118	procollagen C-endopeptidase enhancer(PCOLCE)	Homo sapiens
+131540	zinc finger DHHC-type containing 19(ZDHHC19)	Homo sapiens
+4835	NAD(P)H quinone dehydrogenase 2(NQO2)	Homo sapiens
+340419	R-spondin 2(RSPO2)	Homo sapiens
+101929425	uncharacterized LOC101929425(LOC101929425)	Homo sapiens
+57863	cell adhesion molecule 3(CADM3)	Homo sapiens
+27284	sulfotransferase family 1B member 1(SULT1B1)	Homo sapiens
+6781	stanniocalcin 1(STC1)	Homo sapiens
+340990	otogelin(OTOG)	Homo sapiens
+132789	glucosamine-6-phosphate deaminase 2(GNPDA2)	Homo sapiens
+4316	matrix metallopeptidase 7(MMP7)	Homo sapiens
+2149	coagulation factor II thrombin receptor(F2R)	Homo sapiens
+4313	matrix metallopeptidase 2(MMP2)	Homo sapiens
+55076	transmembrane protein 45A(TMEM45A)	Homo sapiens
+79054	transient receptor potential cation channel subfamily M member 8(TRPM8)	Homo sapiens
+9947	MAGE family member C1(MAGEC1)	Homo sapiens
+150244	zinc finger DHHC-type containing 8 pseudogene 1(ZDHHC8P1)	Homo sapiens
+7171	tropomyosin 4(TPM4)	Homo sapiens
+5274	serpin family I member 1(SERPINI1)	Homo sapiens
+100616464	microRNA 4778(MIR4778)	Homo sapiens

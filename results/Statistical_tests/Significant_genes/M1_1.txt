@@ -1,0 +1,5 @@
+1556	cytochrome P450 family 2 subfamily B member 7, pseudogene(CYP2B7P)	Homo sapiens
+6694	secreted phosphoprotein 2(SPP2)	Homo sapiens
+1805	dermatopontin(DPT)	Homo sapiens
+4958	osteomodulin(OMD)	Homo sapiens
+1401	C-reactive protein(CRP)	Homo sapiens

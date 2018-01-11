@@ -6,9 +6,9 @@
 
 ### **Indications** 
 
-- Lancer les lignes de commandes dans R (ou RStudio) en se plaçant au niv du répertoire My_project
+- Lancer les lignes de commandes dans R (ou RStudio) en se plaçant au niv du répertoire My_project/
 - La version et les packages présents dans mon RStudio sont montrés dans sessionInfo.png
-(Plus tard, toutes les lignes de commande seront mis dans un seul script à part pour pouvoir lancer ensuite une ligne de commande - répertoire src/ pas à utiliser pour l'instant)
+- Le readme traitant toutes les comparaisons est README.md dans le repertoire doc/
 - Tous les résultats obtenus (figures ...) sont dans le répertoire results/
 
 ### **I - Importation et Normalisation des données**
@@ -282,6 +282,8 @@ perm_fc.BaselinevsCtrl <- rowMeans(w_data[,permutated_design$Baseline==1])-
 Plot de -log10(pvalues) vs foldchange (pour avoir un bon visuel)
 Pour choisir le seuil, il faut que sous ce cut-off, il y ait plus de points bleus (données réelles) que de points rouges (données simulées) car c'est là où les gènes vont être le plus significatif.
 
+**Seulement pour les comparaisons 2 et 3**
+
 ```{r}
 
 plot(fc.CtrlvsHNO3, -log10(t.pval.CtrlvsHNO3), main = "Volcano Plot\nCtrl vs HNO3"
@@ -354,14 +356,15 @@ length(top3_1);length(top3_2);length(top3_3)
 ```
 
 2 types de Heatmap pour chacune des cinq conditions avec les genes significatifs sélectionnés:
-- 1°) avec les probes (comme beaucoup, alors probes pas très visibles)
-- 2°) avec les noms des gènes (par contre, beaucoup de NA, donc pas informatif)
-(le code est là, mais pas présent dans les résultats car ne sert à rien)
+- 1°) avec les probes 
+- 2°) avec les noms des gènes 
+
+**Seulement pour les comparaisons 2 et 3**
 
 ```{r}
 #heatmap2 avec les genes significatifs
-#avec les probes
 matrix <- as.matrix(top2_3)
+#avec les probes
 new <- as.matrix(w_data[matrix[,1],seq(11,20)])
 heatmap(new, main = "HNO3 vs M1 (3)")
 #heatmap(new, main = "HNO3 vs M1 (3)", xlab = "samples              ", 
@@ -373,12 +376,12 @@ heatmap(new_genes, main = "HNO3 vs M1 (3)")
 
 #pour avoir des heatmaps sans des NA
 no_NA <- rownames(new_genes)
-no_NA_indice <- which(a != "NA")
-heatmap(new_genes[no_NA_indice,])
+no_NA_indice <- which(no_NA != "NA")
+heatmap(new_genes[no_NA_indice,], main = "HNO3 vs M1 (3)")
 
 #heatmap3 avec les genes significatifs
+matrix <- as.matrix(top3_2)
 #avec les probes
-matrix <- as.matrix(top3_3)
 new <- as.matrix(w_data[matrix[,1],c(11,12,13,14,15,21,22,23,24,25)])
 heatmap(new, main = "HNO3 vs M2 (3)")
 #heatmap(new, main = "HNO3 vs M2 (3)", xlab = "samples                       ", 
@@ -388,11 +391,27 @@ new_genes <- as.matrix(w_data[matrix[,1],c(11,12,13,14,15,21,22,23,24,25)])
 rownames(new_genes) <- data$geneSymbol[matrix[,1]]
 heatmap(new_genes, main = "HNO3 vs M2 (3)")
 
+#pour avoir des heatmaps sans des NA
+no_NA <- rownames(new_genes)
+no_NA_indice <- which(no_NA != "NA")
+heatmap(new_genes[no_NA_indice,], main = "HNO3 vs M2 (3)")
+
+#Analyse entre les resultats de M1 et M2 (des resultats de l'analyse 2)
+M1 <- new_genes[no_NA_indice,]
+M1_genes <- rownames(M1)
+M2 <- new_genes[no_NA_indice,]
+M2_genes <- rownames(M2)
+#nb de genes 
+length(M1_genes) #41 genes
+length(M2_genes) #44 genes
+length(intersect(M1_genes, M2_genes)) #20 genes en commun
 ```
 
 ### **VI - Enrichissement Biologique avec Pathways et GOterms**
 
 Pour chaque condition, les probes et noms de gènes sont enregistrés dans des fichiers textes pour pouvoir les utiliser par la suite
+
+**Seulement pour les comparaisons 2 et 3**
 
 ```{r}
 #avoir les probes pour chaque analyse
@@ -404,8 +423,8 @@ top3_2_sondes <- names(top3_2)
 top3_3_sondes <- names(top3_3)
 #noms des genes pour la deuxième comparaison
 n = 0
-gene_names_2 <- vector(length = length(top2_1_sondes))
-for (i in top2_1_sondes){
+gene_names_2 <- vector(length = length(top2_3_sondes))
+for (i in top2_3_sondes){
   n = n + 1 
   #print(i)
   gene_symbol <- data$geneSymbol
@@ -413,9 +432,9 @@ for (i in top2_1_sondes){
   gene_name <- gene_symbol[which(data$probe_id == i)]
   gene_names_2[n] <- gene_name
   #enregistrer ds un fichier le nom des genes 
-  capture.output(gene_name, file="./results/Statistical_tests/Significant_genes/HNO3vsM1_1.txt", append = TRUE)
+  capture.output(gene_name, file="./results/Statistical_tests/Significant_genes/HNO3vsM1_3.txt", append = TRUE)
   #enregistrer les probes
-  capture.output(i, file="./results/Statistical_tests/Significant_probes/probes_HNO3vsM1_1.txt", append = TRUE)
+  capture.output(i, file="./results/Statistical_tests/Significant_probes/probes_HNO3vsM1_3.txt", append = TRUE)
 }
 #noms des genes pour la troisième comparaison
 n = 0
@@ -432,38 +451,46 @@ for (i in top3_3_sondes){
   #enregistrer les probes
   capture.output(i, file="./results/Statistical_tests/Significant_probes/probes_HNO3vsM2_3.txt", append = TRUE)
 }
-#noms des genes pour la quatrieme comparaison
-n = 0
-gene_names_4 <- vector(length = length(top4_3_sondes))
-for (i in top4_3_sondes){
-  n = n + 1 
-  #print(i)
-  gene_symbol <- data$geneSymbol
-  gene_symbol <- as.matrix(gene_symbol)
-  gene_name <- gene_symbol[which(data$probe_id == i)]
-  gene_names_4[n] <- gene_name
-  #enregistrer ds un fichier le nom des genes 
-  capture.output(gene_name, file="./results/Tests_statistiques/Significant_genes/M1vsM2_3.txt", append = TRUE)
-  #enregistrer les probes
-  capture.output(i, file="./results/Tests_statistiques/Significant_probes/probes_M1vsM2_3.txt", append = TRUE)
-}
-#noms des genes pour la cinquieme comparaison
-n = 0
-gene_names_5 <- vector(length = length(top5_3_sondes))
-for (i in top5_3_sondes){
-  n = n + 1 
-  #print(i)
-  gene_symbol <- data$geneSymbol
-  gene_symbol <- as.matrix(gene_symbol)
-  gene_name <- gene_symbol[which(data$probe_id == i)]
-  gene_names_5[n] <- gene_name
-  #enregistrer ds un fichier le nom des genes 
-  capture.output(gene_name, file="./results/Tests_statistiques/Significant_genes/BaselinevsCtrl_3.txt", append = TRUE)
-  #enregistrer les probes
-  capture.output(i, file="./results/Tests_statistiques/Significant_probes/probes_BaselinevsCtrl_3.txt", append = TRUE)
-}
 #rmq = les fichiers ont ete modifiés à la main par la suite.
 
 ```
 
-- DAVID et Panther et Gorilla ont été utilisés (voir dans le répertoire results/)
+- DAVID et Panther ont été utilisés (voir dans le répertoire results/)
+
+
+
+```{r}
+# load the library
+library("biomaRt")
+
+# I prefer ensembl so that the one I will query, but you can
+# query other bases, try out: listMarts() 
+ensembl=useMart("ensembl")
+
+# as it seems that you are looking for human genes:
+ensembl = useDataset("hsapiens_gene_ensembl",mart=ensembl)
+# if you want other model organisms have a look at:
+#listDatasets(ensembl)
+
+#You need to create your query (your list of ENTREZ ids). To see which filters you can query:
+
+filters = listFilters(ensembl)
+
+#And then you want to retrieve attributes : your GO number and description. To see the list of available attributes
+
+attributes = listAttributes(ensembl)
+
+#For you, the query would look like something as:
+
+a = read.table('./results/Statistical_tests/Significant_genes/M1_1.txt', sep="\t")
+
+goids = getBM(
+
+        #you want entrezgene so you know which is what, the GO ID and
+        # name_1006 is actually the identifier of 'Go term name'
+        attributes=c('entrezgene','go_id', 'name_1006'), 
+
+        filters='entrezgene', 
+        values=a$V1, 
+        mart=ensembl)
+```
